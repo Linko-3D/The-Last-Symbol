@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/torch.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Assets/Textures/albedo torch.tga" type="Texture" id=2]
+[ext_resource path="res://Assets/Textures/normal torch.tga" type="Texture" id=3]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_texture = ExtResource( 2 )
+normal_enabled = true
+normal_scale = 1.0
+normal_texture = ExtResource( 3 )
+
+[node name="Torch" type="Position3D"]
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+use_in_baked_light = true
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+
+[node name="OmniLight" type="OmniLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.616158, 0.380988 )
+omni_range = 15.0
