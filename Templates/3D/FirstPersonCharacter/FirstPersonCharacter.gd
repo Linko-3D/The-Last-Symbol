@@ -32,6 +32,7 @@ func _physics_process(delta):
 			velocity += global_transform.basis.x * speed
 		
 		if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+			$Jump.play()
 			snap = Vector3()
 			velocity.y = jump_height
 		else:

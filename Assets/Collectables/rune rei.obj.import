@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/rune rei.obj-b048b14da8d121ebedf40521e261036f.mesh"
+
+[deps]
+
+files=[ "res://.import/rune rei.obj-b048b14da8d121ebedf40521e261036f.mesh" ]
+
+source_file="res://Assets/Collectables/rune rei.obj"
+dest_files=[ "res://.import/rune rei.obj-b048b14da8d121ebedf40521e261036f.mesh", "res://.import/rune rei.obj-b048b14da8d121ebedf40521e261036f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

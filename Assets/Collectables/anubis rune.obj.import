@@ -1,0 +1,18 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/anubis rune.obj-24b964854c88939d27afd05a3076d6db.mesh"
+
+[deps]
+
+files=[ "res://.import/anubis rune.obj-24b964854c88939d27afd05a3076d6db.mesh" ]
+
+source_file="res://Assets/Collectables/anubis rune.obj"
+dest_files=[ "res://.import/anubis rune.obj-24b964854c88939d27afd05a3076d6db.mesh", "res://.import/anubis rune.obj-24b964854c88939d27afd05a3076d6db.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+optimize_mesh=true

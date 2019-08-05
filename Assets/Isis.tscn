@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Assets/Collectables/isis.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Assets/Collectables/Textures/albedo isis.tga" type="Texture" id=2]
+[ext_resource path="res://Assets/Collectables/Textures/normal isis.tga" type="Texture" id=3]
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_texture = ExtResource( 2 )
+metallic = 0.2
+roughness = 0.1
+normal_enabled = true
+normal_scale = 1.0
+normal_texture = ExtResource( 3 )
+
+[sub_resource type="CylinderShape" id=1]
+radius = 0.270254
+height = 1.46143
+
+[node name="Isis" type="Area"]
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+mesh = ExtResource( 1 )
+material/0 = SubResource( 2 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.669223, 0 )
+shape = SubResource( 1 )
