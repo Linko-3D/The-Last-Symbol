@@ -7,7 +7,9 @@ var speed = 6
 var max_falling_speed = 20
 var jump_height = 9
 
-var snap = Vector3.DOWN
+var snap_distance = -0.1
+var snap = Vector3(0, snap_distance,0)
+
 
 var mouse_sensitivity = 0.15
 
@@ -32,11 +34,10 @@ func _physics_process(delta):
 			velocity += global_transform.basis.x * speed
 		
 		if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-			$Jump.play()
 			snap = Vector3()
 			velocity.y = jump_height
 		else:
-			snap = Vector3.DOWN
+			snap = Vector3(0, snap_distance, 0)
 		
 		velocity.y -= GRAVITY # Gravity
 		velocity.y = clamp(velocity.y, -max_falling_speed, max_falling_speed) # Max falling speed
@@ -44,7 +45,7 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("ui_cancel"):
 		get_tree().quit()
 		
-	velocity =  move_and_slide_with_snap(velocity, snap, Vector3.UP, true, 4, 90)
+	velocity =  move_and_slide_with_snap(velocity, snap, Vector3.UP, true, 4, 5)
 	
 # ----------------------------------
 # Mouse controls
