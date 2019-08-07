@@ -19,4 +19,5 @@ material/0 = SubResource( 1 )
 
 [node name="OmniLight" type="OmniLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.616158, 0.380988 )
+shadow_enabled = true
 omni_range = 18.0

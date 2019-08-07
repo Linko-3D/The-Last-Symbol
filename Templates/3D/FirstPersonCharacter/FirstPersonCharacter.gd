@@ -5,7 +5,7 @@ const GRAVITY = 0.35
 var velocity = Vector3()
 var speed = 6
 var max_falling_speed = 20
-var jump_height = 9
+var jump_height = 10
 
 var snap_distance = -0.1
 var snap = Vector3(0, snap_distance,0)
