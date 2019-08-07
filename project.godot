@@ -26,7 +26,7 @@ Music="*res://Assets/Music.tscn"
 [display]
 
 window/size/width=1920
-window/size/height=1080
+window/size/height=80
 window/size/fullscreen=true
 
 [importer_defaults]
