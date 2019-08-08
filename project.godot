@@ -23,12 +23,6 @@ config/icon="res://icon.png"
 
 Music="*res://Assets/Music.tscn"
 
-[display]
-
-window/size/width=1920
-window/size/height=80
-window/size/fullscreen=true
-
 [importer_defaults]
 
 texture={
@@ -87,6 +81,11 @@ ui_down={
 flare={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":70,"unicode":0,"echo":false,"script":null)
+ ]
+}
+restart={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":82,"unicode":0,"echo":false,"script":null)
  ]
 }
 
