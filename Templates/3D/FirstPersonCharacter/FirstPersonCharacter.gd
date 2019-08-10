@@ -21,6 +21,7 @@ func _ready():
 # Keyboard controls and gravity
 
 func _physics_process(delta):
+	print(mouse_sensitivity / (OS.get_screen_size().x/1000))
 	velocity.x = 0 # Resets the direction when no key is pressed
 	velocity.z = 0
 
@@ -57,8 +58,8 @@ func _physics_process(delta):
 
 func _input(event): 
 	if event is InputEventMouseMotion and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
-		rotate_y(deg2rad(-event.relative.x * mouse_sensitivity)) #yaw
-		$Camera.rotate_x(deg2rad(-event.relative.y * mouse_sensitivity)) #pitch
+		rotate_y(deg2rad(-event.relative.x * mouse_sensitivity / (OS.get_screen_size().x / 1000))) #yaw
+		$Camera.rotate_x(deg2rad(-event.relative.y * mouse_sensitivity / (OS.get_screen_size().y / 1000))) #pitch
 		$Camera.rotation.x = clamp($Camera.rotation.x, deg2rad(-90), deg2rad(90))
 		
 func ammo():
