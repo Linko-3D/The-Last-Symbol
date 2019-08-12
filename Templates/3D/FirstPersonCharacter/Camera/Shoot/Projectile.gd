@@ -1,8 +1,11 @@
 extends RigidBody
 
-var health = 3
+var lifespan = 3
 
-func _process(delta):
-	print(health)
-	if health <= 0:
-		queue_free()
+func _ready():
+	$Timer.wait_time = lifespan
+	$Timer.start()
+
+
+func _on_Timer_timeout():
+	queue_free()

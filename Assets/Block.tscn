@@ -1,22 +1,28 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Assets/block.obj" type="ArrayMesh" id=1]
-[ext_resource path="res://Assets/Textures/albedo block.tga" type="Texture" id=2]
-[ext_resource path="res://Assets/Textures/normal block.tga" type="Texture" id=3]
+[ext_resource path="res://Assets/Textures/T_sand_a.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Textures/T_sand_ao.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Textures/T_sand_n.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Textures/T_sand_r.png" type="Texture" id=5]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_texture = ExtResource( 2 )
-roughness = 0.8
+roughness_texture = ExtResource( 5 )
 normal_enabled = true
 normal_scale = 1.0
-normal_texture = ExtResource( 3 )
+normal_texture = ExtResource( 4 )
+ao_enabled = true
+ao_light_affect = 0.0
+ao_texture = ExtResource( 3 )
+ao_on_uv2 = false
+ao_texture_channel = 0
 
 [sub_resource type="BoxShape" id=2]
 
 [node name="Block" type="StaticBody"]
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
-use_in_baked_light = true
 mesh = ExtResource( 1 )
 material/0 = SubResource( 1 )
 
