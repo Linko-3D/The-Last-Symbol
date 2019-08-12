@@ -13,6 +13,7 @@ var mouse_sensitivity = 0.15
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	$Ammo.play()
 
 # ----------------------------------
 # Keyboard controls and gravity
@@ -35,6 +36,7 @@ func _physics_process(delta):
 			get_tree().reload_current_scene()
 		
 		if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+			$Jump.play()
 			snap = Vector3()
 			velocity.y = jump_height
 		else:

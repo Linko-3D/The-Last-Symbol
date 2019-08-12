@@ -19,6 +19,10 @@ config/name="The Last Symbol"
 run/main_scene="res://Level.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Music="*res://Assets/Music.tscn"
+
 [importer_defaults]
 
 texture={
@@ -82,5 +86,6 @@ restart={
 
 [rendering]
 
+quality/driver/driver_name="GLES2"
 quality/filters/msaa=1
 environment/default_environment="res://default_env.tres"
