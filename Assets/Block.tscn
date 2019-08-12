@@ -23,6 +23,7 @@ ao_texture_channel = 0
 [node name="Block" type="StaticBody"]
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
+use_in_baked_light = true
 mesh = ExtResource( 1 )
 material/0 = SubResource( 1 )
 

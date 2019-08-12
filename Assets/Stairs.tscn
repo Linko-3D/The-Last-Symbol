@@ -11,5 +11,6 @@ points = PoolVector3Array( -1, -2, 3, -1, 2, -3, 1, -2, 3, 1, 2, -3 )
 shape = SubResource( 1 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
+use_in_baked_light = true
 mesh = ExtResource( 1 )
 material/0 = null
