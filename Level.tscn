@@ -10,7 +10,7 @@
 [node name="Level" type="Spatial"]
 
 [node name="FirstPersonCharacter" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 49.1423, -73.4634, -98.4469 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10, 16 )
 
 [node name="Map" type="Spatial" parent="."]
 
