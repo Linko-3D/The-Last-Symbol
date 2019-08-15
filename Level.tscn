@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Templates/3D/FirstPersonCharacter/FirstPersonCharacter.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Block.tscn" type="PackedScene" id=2]
@@ -7,6 +7,8 @@
 [ext_resource path="res://Assets/Stairs.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Assets/Spikes.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/Torch.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Assets/AmmoSpawn.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Assets/Teleporter.tscn" type="PackedScene" id=9]
 
 [sub_resource type="GIProbeData" id=1]
 bounds = AABB( -34.7327, -50.2569, -74.8488, 69.4655, 100.514, 149.698 )
@@ -8152,7 +8154,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 11, 6 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 11, 6 )
 
 [node name="Interactive" type="Spatial" parent="Map"]
-editor/display_folded = true
 
 [node name="Cube" parent="Map/Interactive" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 3 )
@@ -8360,69 +8361,97 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 52, -24, -102 )
 [node name="Torches" type="Spatial" parent="Map"]
 
 [node name="Torch" parent="Map/Torches" instance=ExtResource( 7 )]
-transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, -3.02127, 7, -0.803055 )
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, -3, 7, -1 )
 
 [node name="Torch2" parent="Map/Torches" instance=ExtResource( 7 )]
-transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 4.97873, 7, -0.803055 )
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 5, 7, -1 )
 
 [node name="Torch3" parent="Map/Torches" instance=ExtResource( 7 )]
-transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 21.9787, 8, -2.80305 )
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 22, 8, -3 )
 
 [node name="Torch4" parent="Map/Torches" instance=ExtResource( 7 )]
-transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 22.9787, -3, -32.8031 )
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 23, -3, -33 )
 
 [node name="Torch9" parent="Map/Torches" instance=ExtResource( 7 )]
-transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 22.9787, -6, -47.8031 )
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 23, -6, -48 )
+
+[node name="Torch23" parent="Map/Torches" instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 23, -17, -35 )
 
 [node name="Torch8" parent="Map/Torches" instance=ExtResource( 7 )]
-transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 16.9787, -3, -38.8031 )
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 17, -3, -39 )
 
 [node name="Torch5" parent="Map/Torches" instance=ExtResource( 7 )]
-transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 14.9787, -5, -61.8031 )
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 15, -5, -62 )
 
 [node name="Torch6" parent="Map/Torches" instance=ExtResource( 7 )]
-transform = Transform( 1.31134e-007, 0, -1, 0, 1, 0, 1, 0, 1.31134e-007, 50.9787, -19, -63.8031 )
+transform = Transform( 1.31134e-007, 0, -1, 0, 1, 0, 1, 0, 1.31134e-007, 51, -19, -64 )
 
 [node name="Torch7" parent="Map/Torches" instance=ExtResource( 7 )]
-transform = Transform( 1.31134e-007, 0, -1, 0, 1, 0, 1, 0, 1.31134e-007, 50.9787, -19, -59.8031 )
+transform = Transform( 1.31134e-007, 0, -1, 0, 1, 0, 1, 0, 1.31134e-007, 51, -19, -60 )
 
 [node name="Torch10" parent="Map/Torches" instance=ExtResource( 7 )]
-transform = Transform( 1.31134e-007, 0, -1, 0, 1, 0, 1, 0, 1.31134e-007, 60.9787, -20, -61.8031 )
+transform = Transform( 1.31134e-007, 0, -1, 0, 1, 0, 1, 0, 1.31134e-007, 61, -20, -62 )
 
 [node name="Torch11" parent="Map/Torches" instance=ExtResource( 7 )]
-transform = Transform( 1.31134e-007, 0, -1, 0, 1, 0, 1, 0, 1.31134e-007, 60.9787, -20, -69.8031 )
+transform = Transform( 1.31134e-007, 0, -1, 0, 1, 0, 1, 0, 1.31134e-007, 61, -20, -70 )
 
 [node name="Torch12" parent="Map/Torches" instance=ExtResource( 7 )]
-transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 53.9787, -19, -72.8031 )
+transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 54, -19, -73 )
+
+[node name="Torch22" parent="Map/Torches" instance=ExtResource( 7 )]
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 51, -19, -94 )
 
 [node name="Torch13" parent="Map/Torches" instance=ExtResource( 7 )]
-transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 49.9787, -19, -72.8031 )
+transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 50, -19, -73 )
 
 [node name="Torch14" parent="Map/Torches" instance=ExtResource( 7 )]
-transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 49.9787, -19, -98.8031 )
+transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 50, -19, -99 )
 
 [node name="Torch15" parent="Map/Torches" instance=ExtResource( 7 )]
-transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 38.9787, -30, -108.803 )
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 39, -30, -109 )
 
 [node name="Torch17" parent="Map/Torches" instance=ExtResource( 7 )]
-transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 39.9787, -35, -94.8031 )
+transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 40, -35, -95 )
 
 [node name="Torch18" parent="Map/Torches" instance=ExtResource( 7 )]
-transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 26.9787, -75, -97.8031 )
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 27, -75, -98 )
 
 [node name="Torch20" parent="Map/Torches" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 35.9787, -75, -104.803 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 36, -75, -105 )
 
 [node name="Torch21" parent="Map/Torches" instance=ExtResource( 7 )]
-transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 50.9787, -71, -97.8031 )
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 51, -71, -98 )
 
 [node name="Torch19" parent="Map/Torches" instance=ExtResource( 7 )]
-transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 26.9787, -75, -85.8031 )
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 27, -75, -86 )
 
 [node name="Torch16" parent="Map/Torches" instance=ExtResource( 7 )]
-transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 38.9787, -30, -120.803 )
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 39, -30, -121 )
 
 [node name="GIProbe" type="GIProbe" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28.8238, -36.2681, -53.8381 )
 extents = Vector3( 34.7327, 50.2569, 74.8488 )
 data = SubResource( 1 )
+
+[node name="AmmoSpawn" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 5, -10 )
+
+[node name="AmmoSpawn2" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 5, 4 )
+
+[node name="AmmoSpawn4" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, -7, -59 )
+
+[node name="AmmoSpawn3" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, -19, -37 )
+
+[node name="AmmoSpawn5" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54, -21, -74 )
+
+[node name="AmmoSpawn6" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 50, -21, -74 )
+
+[node name="Teleporter" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, -20, -31 )
+destination = Vector3( 20, -6, -34 )
