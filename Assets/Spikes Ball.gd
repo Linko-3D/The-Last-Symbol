@@ -4,6 +4,8 @@ export (float) var offsetX
 export (float) var offsetY
 export (float) var offsetZ
 export (float) var speed = 3
+export (float) var start_pause
+export (float) var end_pause
 
 var moveTo = Vector3()
 var starting_position = Vector3()
@@ -19,11 +21,11 @@ func _process(delta):
 	if $Tween.is_active() == false: # Each time the animation stops check the direction set
 		if forward:
 			$Tween.start()
-			$Tween.interpolate_property(self, "translation", translation, moveTo, speed, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT, 0)
+			$Tween.interpolate_property(self, "translation", translation, moveTo, speed, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT, start_pause)
 			forward = false
 		else:
 			$Tween.start()
-			$Tween.interpolate_property(self, "translation", translation, starting_position, speed, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT, 0)
+			$Tween.interpolate_property(self, "translation", translation, starting_position, speed, Tween.TRANS_LINEAR, Tween.EASE_IN_OUT, end_pause)
 			forward = true
 
 func _on_Spikes_Ball_body_entered(body):
