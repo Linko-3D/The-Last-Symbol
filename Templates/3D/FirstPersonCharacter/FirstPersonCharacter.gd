@@ -13,7 +13,7 @@ var mouse_sensitivity = 0.15
 
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	$Ammo.play()
+	ammo()
 
 # ----------------------------------
 # Keyboard controls and gravity
@@ -57,3 +57,6 @@ func _input(event):
 		rotate_y(deg2rad(-event.relative.x * mouse_sensitivity)) #yaw
 		$Camera.rotate_x(deg2rad(-event.relative.y * mouse_sensitivity)) #pitch
 		$Camera.rotation.x = clamp($Camera.rotation.x, deg2rad(-90), deg2rad(90))
+
+func ammo():
+	$Ammo.play()
