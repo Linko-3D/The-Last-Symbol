@@ -17,7 +17,7 @@
 [node name="Level" type="Spatial"]
 
 [node name="FirstPersonCharacter" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 50.8598, -19.1576, -72.736 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 14, 14 )
 
 [node name="Map" type="Spatial" parent="."]
 
@@ -671,6 +671,9 @@ transform = Transform( 8.74228e-008, -8.74228e-008, 1, 1, 1.91069e-015, -8.74228
 [node name="Wall9" parent="Map/Wall" instance=ExtResource( 3 )]
 transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 23, 1, -10 )
 
+[node name="Wall195" parent="Map/Wall" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 23, 1, -20 )
+
 [node name="Wall48" parent="Map/Wall" instance=ExtResource( 3 )]
 transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 21, 1, -22 )
 
@@ -682,6 +685,9 @@ transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 23, 1
 
 [node name="Wall10" parent="Map/Wall" instance=ExtResource( 3 )]
 transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 23, 11, -10 )
+
+[node name="Wall194" parent="Map/Wall" instance=ExtResource( 3 )]
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 23, 11, -20 )
 
 [node name="Wall47" parent="Map/Wall" instance=ExtResource( 3 )]
 transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 21, 11, -22 )
@@ -1072,7 +1078,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 15, 5 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 15, 5 )
 
 [node name="Torch2" parent="Map/Torches" instance=ExtResource( 9 )]
-transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 5, 7, -1 )
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 3, 7, -1 )
 
 [node name="Torch3" parent="Map/Torches" instance=ExtResource( 9 )]
 transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 23, 8, -6 )
@@ -1087,7 +1093,7 @@ transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 21, 3
 transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 23, -13, -48 )
 
 [node name="Torch23" parent="Map/Torches" instance=ExtResource( 9 )]
-transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 23, -19, -35 )
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 23, -18, -34 )
 
 [node name="Torch8" parent="Map/Torches" instance=ExtResource( 9 )]
 transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 17, -3, -39 )
@@ -1114,7 +1120,10 @@ transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 51, -
 transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 50, -19, -99 )
 
 [node name="Torch28" parent="Map/Torches" instance=ExtResource( 9 )]
-transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 53, -23, -115 )
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 55, -18, -117 )
+
+[node name="Torch31" parent="Map/Torches" instance=ExtResource( 9 )]
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 47, -18, -86 )
 
 [node name="Torch15" parent="Map/Torches" instance=ExtResource( 9 )]
 transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 39, -30, -109 )
