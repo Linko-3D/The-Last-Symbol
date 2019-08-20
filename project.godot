@@ -22,6 +22,7 @@ config/icon="res://icon.png"
 [autoload]
 
 Music="*res://Assets/Music.tscn"
+Singleton="*res://Singleton.gd"
 
 [display]
 

@@ -5,9 +5,6 @@ var ammo = 0
 
 var explosion
 
-func _process(delta):
-	print(ammo)
-
 func _input(event):
 	if ammo >= 1:
 		if event is InputEventMouseButton and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
