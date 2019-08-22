@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Templates/3D/Interactive/AddCube/Surface.gd" type="Script" id=1]
 [ext_resource path="res://Assets/metal.tres" type="Material" id=2]
+[ext_resource path="res://Assets/Textures/T_metal_r.png" type="Texture" id=3]
 
 [sub_resource type="PlaneMesh" id=1]
 
@@ -10,19 +11,18 @@ extents = Vector3( 1, 0.001, 1 )
 
 [sub_resource type="CubeMesh" id=3]
 
-[sub_resource type="SpatialMaterial" id=6]
+[sub_resource type="SpatialMaterial" id=4]
 metallic = 0.8
-roughness = 0.2
+roughness_texture = ExtResource( 3 )
 emission_enabled = true
 emission = Color( 1, 0.784314, 0, 1 )
 emission_energy = 2.0
 emission_operator = 0
 emission_on_uv2 = false
 
-[sub_resource type="BoxShape" id=4]
+[sub_resource type="BoxShape" id=5]
 
-[sub_resource type="Animation" id=5]
-resource_name = "Color"
+[sub_resource type="Animation" id=6]
 length = 0.2
 tracks/0/type = "value"
 tracks/0/path = NodePath("Spawn/MeshInstance2:material/0:emission_energy")
@@ -53,12 +53,12 @@ visible = false
 [node name="MeshInstance2" type="MeshInstance" parent="Spawn"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
 mesh = SubResource( 3 )
-material/0 = SubResource( 6 )
+material/0 = SubResource( 4 )
 
 [node name="SpawnCollision" type="CollisionShape" parent="Spawn"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
-shape = SubResource( 4 )
+shape = SubResource( 5 )
 disabled = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/Color = SubResource( 5 )
+anims/Color = SubResource( 6 )
