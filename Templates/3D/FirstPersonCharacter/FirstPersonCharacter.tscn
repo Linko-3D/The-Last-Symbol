@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Templates/3D/FirstPersonCharacter/FirstPersonCharacter.gd" type="Script" id=1]
 [ext_resource path="res://Templates/3D/HUD/HUD.tscn" type="PackedScene" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Templates/3D/FirstPersonCharacter/Camera/Shoot/Shoot.tscn" type="PackedScene" id=4]
 [ext_resource path="res://SFX/Jump.wav" type="AudioStream" id=5]
 [ext_resource path="res://SFX/Ammo.wav" type="AudioStream" id=6]
+[ext_resource path="res://Assets/AutoJump.tscn" type="PackedScene" id=7]
 
 [sub_resource type="CapsuleShape" id=1]
 radius = 0.5
@@ -42,3 +43,6 @@ volume_db = -15.0
 [node name="Ammo" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
 volume_db = -15.0
+
+[node name="AutoJump" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5, 0 )
