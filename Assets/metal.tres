@@ -5,3 +5,4 @@
 [resource]
 metallic = 0.8
 roughness_texture = ExtResource( 1 )
+uv1_scale = Vector3( 2.5, 2.5, 2.5 )

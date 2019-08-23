@@ -1,6 +1,6 @@
 extends RigidBody
 
-var lifespan = 3
+var lifespan = 10
 
 func _ready():
 	friction = 0
