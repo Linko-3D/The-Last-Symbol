@@ -18,7 +18,7 @@ material/0 = null
 
 [node name="OmniLight" type="OmniLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.83985, 0.443382 )
-light_energy = 0.6
-light_indirect_energy = 0.6
+light_energy = 0.8
+light_indirect_energy = 0.8
 shadow_enabled = true
 omni_range = 15.0
