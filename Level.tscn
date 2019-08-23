@@ -472,14 +472,8 @@ transform = Transform( 4.37114e-008, -8.74228e-008, -1, -1.14641e-014, -1, 8.742
 [node name="Wall165" parent="Map/Wall" instance=ExtResource( 3 )]
 transform = Transform( -1, 1.14641e-014, 7.10543e-015, -1.14641e-014, -1, 8.74228e-008, 7.10543e-015, 8.74228e-008, 1, 50, -21, -123 )
 
-[node name="Wall170" parent="Map/Wall" instance=ExtResource( 3 )]
-transform = Transform( -1, 1.14641e-014, 7.10543e-015, 7.10543e-015, 1.31134e-007, 1, 1.14641e-014, 1, -1.31134e-007, 56, -26, -122 )
-
 [node name="Wall167" parent="Map/Wall" instance=ExtResource( 3 )]
 transform = Transform( -1, 1.14641e-014, 7.10543e-015, -1.14641e-014, -1, 8.74228e-008, 7.10543e-015, 8.74228e-008, 1, 50, -31, -123 )
-
-[node name="Wall156" parent="Map/Wall" instance=ExtResource( 3 )]
-transform = Transform( 1, 0, 0, 0, -4.37114e-008, 1, 0, -1, -4.37114e-008, 54, -22, -108 )
 
 [node name="Wall157" parent="Map/Wall" instance=ExtResource( 3 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54, -27, -101 )
@@ -748,10 +742,20 @@ transform = Transform( 1, 0, 0, 0, -1, -8.74228e-008, 0, 8.74228e-008, -1, 45, -
 [node name="WallSmall18" parent="Map/Wall" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, -4.37114e-008, 1, 0, -1, -4.37114e-008, 53, -22, -103 )
 
+[node name="WallSmall39" parent="Map/Wall" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-008, 1, 0, -1, -4.37114e-008, 53, -22, -107 )
+
+[node name="WallSmall40" parent="Map/Wall" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-008, 1, 0, -1, -4.37114e-008, 53, -22, -111 )
+
+[node name="WallSmall41" parent="Map/Wall" instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, -4.37114e-008, 1, 0, -1, -4.37114e-008, 53, -26, -121 )
+
 [node name="WallSmall19" parent="Map/Wall" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, -4.37114e-008, 1, 0, -1, -4.37114e-008, 57, -22, -103 )
 
 [node name="Interactive" type="Spatial" parent="Map"]
+editor/display_folded = true
 
 [node name="Cube" parent="Map/Interactive" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 3 )
@@ -778,6 +782,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40, -39, -110 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 55, -24, -91 )
 
 [node name="Ground" type="Spatial" parent="Map"]
+editor/display_folded = true
 
 [node name="Ground2" parent="Map/Ground" instance=ExtResource( 6 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 4, -10 )
@@ -1128,6 +1133,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 42, -54, -116 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 42, -54, -122 )
 
 [node name="Ball Spikes" type="Spatial" parent="Map"]
+editor/display_folded = true
 
 [node name="Spikes Ball" parent="Map/Ball Spikes" instance=ExtResource( 8 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30, -9, -60 )
@@ -1374,7 +1380,6 @@ start_pause = 0.5
 end_pause = 0.5
 
 [node name="Torches" type="Spatial" parent="Map"]
-editor/display_folded = true
 
 [node name="Torch24" parent="Map/Torches" instance=ExtResource( 9 )]
 transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, -5, 11, -9 )
