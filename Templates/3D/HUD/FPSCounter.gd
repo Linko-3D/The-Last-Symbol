@@ -1,4 +1,6 @@
 extends Label
 
 func _process(delta):
-	text = "FPS: " + str(Engine.get_frames_per_second())
+	 # Find the node with the name "Player"
+
+	text = "Ammunition(s): " + str(get_tree().get_root().find_node("RayCast", true, false).ammo)

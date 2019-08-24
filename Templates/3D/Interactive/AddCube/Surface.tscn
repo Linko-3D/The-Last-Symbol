@@ -19,6 +19,7 @@ emission = Color( 1, 0.784314, 0, 1 )
 emission_energy = 2.0
 emission_operator = 0
 emission_on_uv2 = false
+uv1_scale = Vector3( 2.5, 2.5, 2.5 )
 
 [sub_resource type="BoxShape" id=5]
 

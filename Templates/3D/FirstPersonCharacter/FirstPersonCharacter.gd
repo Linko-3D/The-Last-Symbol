@@ -32,9 +32,7 @@ func _physics_process(delta):
 			velocity += global_transform.basis.x * speed
 		
 		if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-			$Jump.play()
-			snap = Vector3()
-			velocity.y = jump_height
+			jump()
 		else:
 			snap = Vector3(0, snap_distance, 0)
 		
@@ -42,6 +40,13 @@ func _physics_process(delta):
 		
 	velocity =  move_and_slide_with_snap(velocity, snap, Vector3.UP, true, 4, 5)
 	
+	if Input.is_action_just_pressed("flare") and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
+		$Flare.play()
+		
+func jump():
+	$Jump.play()
+	snap = Vector3()
+	velocity.y = jump_height
 # ----------------------------------
 # Mouse controls
 

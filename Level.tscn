@@ -811,7 +811,6 @@ transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 19, 1
 transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 19, 14, -27 )
 
 [node name="Interactive" type="Spatial" parent="Map"]
-editor/display_folded = true
 
 [node name="Cube" parent="Map/Interactive" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 3 )
