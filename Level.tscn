@@ -26,9 +26,10 @@ emission_on_uv2 = false
 [node name="Level" type="Spatial"]
 
 [node name="FirstPersonCharacter" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 15, 15 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 14, 15 )
 
 [node name="Map" type="Spatial" parent="."]
+editor/display_folded = true
 
 [node name="Blocks" type="Spatial" parent="Map"]
 
@@ -1811,10 +1812,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48, -21, -74 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, -22, -31 )
 destination = Vector3( 20, -6, -34 )
 
-[node name="Teleporter3" parent="." instance=ExtResource( 13 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.93775, 12.0406, 8.06745 )
-destination = Vector3( 20, -6, -34 )
-
 [node name="Teleporter2" parent="." instance=ExtResource( 13 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -84, -74 )
 destination = Vector3( 48, -74, -102 )
@@ -1836,5 +1833,8 @@ material/0 = SubResource( 1 )
 transform = Transform( 1, 0, 0, 0, 0.459049, 0.888411, 0, -0.888411, 0.459049, 0, 0, 0 )
 visible = false
 
-[node name="LookAt" parent="." instance=ExtResource( 15 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 15.3474, 8.79261 )
+[node name="Canon" parent="." instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0, -62 )
+
+[node name="Canon2" parent="." instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 53, -13.6102, -104.124 )
