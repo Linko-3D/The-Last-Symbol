@@ -5,8 +5,6 @@ export (PackedScene) var bullet
 
 var projectile
 
-
-
 func _input(event): 
 	if Input.is_action_just_pressed("flare") and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 		projectile = bullet.instance() # We instance the scene
