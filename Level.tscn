@@ -1838,3 +1838,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 46, 0, -62 )
 
 [node name="Canon2" parent="." instance=ExtResource( 15 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 53, -13.6102, -104.124 )
+
+[node name="Canon3" parent="." instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 15.5644, 0 )
