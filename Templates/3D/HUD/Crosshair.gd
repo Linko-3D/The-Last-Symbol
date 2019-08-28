@@ -1,5 +1,5 @@
 extends Sprite
 
-func _ready():
-	position.x = OS.window_size.x / 2
-	position.y = OS.window_size.y / 2
+func _process(delta):
+	position.x = (1920 / 1.5) / 2
+	position.y = (1080 / 1.5) / 2

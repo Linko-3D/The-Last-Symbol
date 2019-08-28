@@ -4,7 +4,7 @@ const GRAVITY = 9.8
 
 export var speed = 6.0
 export var jump_height = 6.5
-export var mouse_sensitivity = 0.15
+export var mouse_sensitivity = 0.15 * 1.5
 
 var velocity = Vector3()
 var snap_distance = -0.1
