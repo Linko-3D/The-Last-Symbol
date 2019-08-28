@@ -26,8 +26,8 @@ Singleton="*res://Singleton.gd"
 
 [display]
 
-window/size/width=1280
-window/size/height=720
+window/size/width=1920
+window/size/height=1080
 window/size/fullscreen=true
 window/stretch/mode="viewport"
 
@@ -99,5 +99,6 @@ flare={
 
 [rendering]
 
+quality/driver/driver_name="GLES2"
 quality/filters/msaa=1
 environment/default_environment="res://default_env.tres"
