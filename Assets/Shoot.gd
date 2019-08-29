@@ -2,7 +2,7 @@ extends Position3D
 
 export (PackedScene) var bullet
 var force = 30.0
-var fire_rate = 5.0
+var fire_rate = 5
 
 var enabled = true
 
