@@ -43,11 +43,13 @@ cast_to = Vector3( 0, 0, -20 )
 
 [node name="Ray" type="MeshInstance" parent="Camera/RayCast"]
 transform = Transform( 1, 0, 0, 0, -4.37114e-008, -1, 0, 1, -4.37114e-008, 0.5, -0.5, -10 )
+visible = false
 mesh = SubResource( 2 )
 material/0 = SubResource( 3 )
 
 [node name="AmmoHold" parent="Camera/RayCast" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -0.5, -1 )
+visible = false
 
 [node name="OmniLight2" type="OmniLight" parent="Camera/RayCast/AmmoHold"]
 light_color = Color( 0, 1, 1, 1 )

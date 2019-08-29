@@ -146,6 +146,15 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, -15, -76 )
 [node name="Block1771" parent="Map/Blocks" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -13, -76 )
 
+[node name="Block1779" parent="Map/Blocks" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 13, -13, -76 )
+
+[node name="Block1780" parent="Map/Blocks" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17, -13, -76 )
+
+[node name="Block1781" parent="Map/Blocks" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, -13, -76 )
+
 [node name="Block1776" parent="Map/Blocks" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -15, -76 )
 
@@ -2548,9 +2557,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 14, 4.5 )
 cast_shadow = 0
 mesh = ExtResource( 14 )
 material/0 = SubResource( 1 )
-
-[node name="Canon3" parent="." instance=ExtResource( 15 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 32, -8, -124 )
 
 [node name="Canon5" parent="." instance=ExtResource( 15 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, -8, -70 )
