@@ -122,6 +122,15 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, -17, -78 )
 [node name="Block1767" parent="Map/Blocks" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -13, -76 )
 
+[node name="Block1782" parent="Map/Blocks" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -11, -76 )
+
+[node name="Block1783" parent="Map/Blocks" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -11, -76 )
+
+[node name="Block1784" parent="Map/Blocks" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, -11, -76 )
+
 [node name="Block1772" parent="Map/Blocks" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4, -15, -76 )
 
