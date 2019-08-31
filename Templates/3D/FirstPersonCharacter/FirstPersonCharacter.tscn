@@ -11,12 +11,12 @@
 [ext_resource path="res://SFX/Flare.wav" type="AudioStream" id=9]
 [ext_resource path="res://Assets/AutoJump.tscn" type="PackedScene" id=10]
 
-[sub_resource type="CylinderMesh" id=2]
+[sub_resource type="CylinderMesh" id=1]
 top_radius = 0.05
 bottom_radius = 0.05
 height = 20.0
 
-[sub_resource type="SpatialMaterial" id=3]
+[sub_resource type="SpatialMaterial" id=2]
 albedo_color = Color( 0, 1, 1, 1 )
 emission_enabled = true
 emission = Color( 0, 1, 1, 1 )
@@ -24,7 +24,7 @@ emission_energy = 1.0
 emission_operator = 0
 emission_on_uv2 = false
 
-[sub_resource type="CapsuleShape" id=1]
+[sub_resource type="CapsuleShape" id=3]
 radius = 0.5
 
 [node name="FirstPersonCharacter" type="KinematicBody" groups=[
@@ -44,8 +44,9 @@ cast_to = Vector3( 0, 0, -20 )
 [node name="Ray" type="MeshInstance" parent="Camera/RayCast"]
 transform = Transform( 1, 0, 0, 0, -4.37114e-008, -1, 0, 1, -4.37114e-008, 0.5, -0.5, -10 )
 visible = false
-mesh = SubResource( 2 )
-material/0 = SubResource( 3 )
+cast_shadow = 0
+mesh = SubResource( 1 )
+material/0 = SubResource( 2 )
 
 [node name="AmmoHold" parent="Camera/RayCast" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -0.5, -1 )
@@ -67,7 +68,7 @@ spot_range = 15.0
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, -4.37114e-008, 1, 0, -1, -4.37114e-008, 0, -0.8, 0 )
-shape = SubResource( 1 )
+shape = SubResource( 3 )
 
 [node name="Jump" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 7 )

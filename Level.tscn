@@ -11,7 +11,7 @@
 [ext_resource path="res://Assets/Torch.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Assets/Stairs.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Assets/Lava.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Assets/AmmoSpawn.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Assets/Ammo.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Assets/Teleporter.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Assets/challenge.obj" type="ArrayMesh" id=14]
 [ext_resource path="res://Assets/Canon.tscn" type="PackedScene" id=15]
@@ -1052,7 +1052,7 @@ transform = Transform( 8.74228e-008, 1, -1.31134e-007, 1.31134e-007, -1.31134e-0
 transform = Transform( 8.74228e-008, 1, -1.31134e-007, 1.31134e-007, -1.31134e-007, -1, -1, 8.74228e-008, -1.31134e-007, 17, -24, -82 )
 
 [node name="Wall361" parent="Map/Wall" instance=ExtResource( 3 )]
-transform = Transform( 1, -1.31134e-007, 1.31134e-007, 1.31134e-007, -1.31134e-007, -1, 1.31134e-007, 1, -1.31134e-007, 40, -24, -71 )
+transform = Transform( 1, -1.31134e-007, 1.31134e-007, 1.31134e-007, -1.31134e-007, -1, 1.31134e-007, 1, -1.31134e-007, 40, -24, -74 )
 
 [node name="Wall165" parent="Map/Wall" instance=ExtResource( 3 )]
 transform = Transform( -1, 1.14641e-014, 7.10543e-015, -1.14641e-014, -1, 8.74228e-008, 7.10543e-015, 8.74228e-008, 1, 50, -21, -123 )
