@@ -89,6 +89,21 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, -35, -75 )
 [node name="Block1777" parent="Map/Blocks" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24, -15, -70 )
 
+[node name="Block1785" parent="Map/Blocks" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, -15, -70 )
+
+[node name="Block1786" parent="Map/Blocks" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, -13, -70 )
+
+[node name="Block1788" parent="Map/Blocks" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, -11, -70 )
+
+[node name="Block1789" parent="Map/Blocks" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, -9, -70 )
+
+[node name="Block1787" parent="Map/Blocks" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, -15, -70 )
+
 [node name="Block1778" parent="Map/Blocks" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 34, -15, -70 )
 
