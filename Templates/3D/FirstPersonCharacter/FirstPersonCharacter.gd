@@ -10,6 +10,8 @@ var velocity = Vector3()
 var snap_distance = -0.1
 var snap = Vector3(0, snap_distance, 0)
 
+var can_hook = false
+
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	$Ammo.play()

@@ -461,6 +461,9 @@ transform = Transform( 1.31134e-007, 0, -1, 0, 1, 0, 1, 0, 1.31134e-007, 47, -1,
 [node name="Wall139" parent="Map/Wall" instance=ExtResource( 3 )]
 transform = Transform( -5.73206e-015, -1, 4.37114e-008, 1.31134e-007, -4.37114e-008, -1, 1, 0, 1.31134e-007, 52, -16, -72 )
 
+[node name="Wall140" parent="Map/Wall" instance=ExtResource( 3 )]
+transform = Transform( -5.73206e-015, -1, 4.37114e-008, -1, 1.91069e-015, -8.74226e-008, 8.74226e-008, -4.37114e-008, -1, 52, -11, -77 )
+
 [node name="Wall183" parent="Map/Wall" instance=ExtResource( 3 )]
 transform = Transform( -5.73206e-015, -1, 4.37114e-008, 1.31134e-007, -4.37114e-008, -1, 1, 0, 1.31134e-007, 62, -16, -92 )
 
@@ -2218,20 +2221,6 @@ speed = 0.5
 start_pause = 0.5
 end_pause = 0.5
 
-[node name="Spikes Ball25" parent="Map/Ball Spikes" instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54, -22, -97 )
-offsetY = 3.0
-speed = 0.5
-start_pause = 0.5
-end_pause = 0.5
-
-[node name="Spikes Ball32" parent="Map/Ball Spikes" instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54, -22, -95 )
-offsetY = 3.0
-speed = 0.5
-start_pause = 0.5
-end_pause = 0.5
-
 [node name="Spikes Ball5" parent="Map/Ball Spikes" instance=ExtResource( 8 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 56, -23, -98 )
 offsetY = 3.0
@@ -2241,20 +2230,6 @@ end_pause = 0.5
 
 [node name="Spikes Ball38" parent="Map/Ball Spikes" instance=ExtResource( 8 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 56, -23, -96 )
-offsetY = 3.0
-speed = 0.5
-start_pause = 0.5
-end_pause = 0.5
-
-[node name="Spikes Ball27" parent="Map/Ball Spikes" instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 56, -22, -97 )
-offsetY = 3.0
-speed = 0.5
-start_pause = 0.5
-end_pause = 0.5
-
-[node name="Spikes Ball30" parent="Map/Ball Spikes" instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 56, -22, -95 )
 offsetY = 3.0
 speed = 0.5
 start_pause = 0.5
@@ -2289,34 +2264,6 @@ speed = 0.5
 start_pause = 0.5
 end_pause = 0.5
 
-[node name="Spikes Ball28" parent="Map/Ball Spikes" instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 52, -22, -97 )
-offsetY = 3.0
-speed = 0.5
-start_pause = 0.5
-end_pause = 0.5
-
-[node name="Spikes Ball35" parent="Map/Ball Spikes" instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 52, -22, -95 )
-offsetY = 3.0
-speed = 0.5
-start_pause = 0.5
-end_pause = 0.5
-
-[node name="Spikes Ball9" parent="Map/Ball Spikes" instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 53, -22, -98 )
-offsetY = 3.0
-speed = 0.5
-start_pause = 0.5
-end_pause = 0.5
-
-[node name="Spikes Ball37" parent="Map/Ball Spikes" instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 53, -22, -96 )
-offsetY = 3.0
-speed = 0.5
-start_pause = 0.5
-end_pause = 0.5
-
 [node name="Spikes Ball26" parent="Map/Ball Spikes" instance=ExtResource( 8 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 53, -23, -97 )
 offsetY = 3.0
@@ -2326,34 +2273,6 @@ end_pause = 0.5
 
 [node name="Spikes Ball33" parent="Map/Ball Spikes" instance=ExtResource( 8 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 53, -23, -95 )
-offsetY = 3.0
-speed = 0.5
-start_pause = 0.5
-end_pause = 0.5
-
-[node name="Spikes Ball24" parent="Map/Ball Spikes" instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 53, -22, -98 )
-offsetY = 3.0
-speed = 0.5
-start_pause = 0.5
-end_pause = 0.5
-
-[node name="Spikes Ball34" parent="Map/Ball Spikes" instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 53, -22, -96 )
-offsetY = 3.0
-speed = 0.5
-start_pause = 0.5
-end_pause = 0.5
-
-[node name="Spikes Ball10" parent="Map/Ball Spikes" instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 55, -22, -98 )
-offsetY = 3.0
-speed = 0.5
-start_pause = 0.5
-end_pause = 0.5
-
-[node name="Spikes Ball40" parent="Map/Ball Spikes" instance=ExtResource( 8 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 55, -22, -96 )
 offsetY = 3.0
 speed = 0.5
 start_pause = 0.5
