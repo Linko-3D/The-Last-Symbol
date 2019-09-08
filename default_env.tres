@@ -7,4 +7,5 @@ background_mode = 1
 background_sky = SubResource( 1 )
 tonemap_mode = 2
 tonemap_white = 7.0
+ss_reflections_enabled = true
 glow_enabled = true

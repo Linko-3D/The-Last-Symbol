@@ -7,6 +7,11 @@ export (float) var speed = 3
 export (float) var start_pause
 export (float) var end_pause
 
+var rotx = 0.0
+var roty = 0.0
+var rotz = 0.0
+var max_rotate_speed = 0.05
+
 var moveTo = Vector3()
 var starting_position = Vector3()
 var forward = true
@@ -18,9 +23,11 @@ func _ready():
 	moveTo.z = starting_position.z + offsetZ
 
 func _process(delta):
-	rotate_x(0.03)
-	rotate_y(0.03)
-	rotate_z(0.03)
+	if $Timer.is_stopped():
+		$Timer.start()
+	rotate_x(rotx)
+	rotate_y(roty)
+	rotate_z(rotz)
 	
 	if $Tween.is_active() == false: # Each time the animation stops check the direction set
 		if forward:
@@ -35,3 +42,9 @@ func _process(delta):
 func _on_Spikes_Ball_body_entered(body):
 	if body.is_in_group("Player"):
 		get_tree().reload_current_scene()
+
+
+func _on_Timer_timeout():
+	rotx = rand_range(-max_rotate_speed, max_rotate_speed)
+	roty = rand_range(-max_rotate_speed, max_rotate_speed)
+	rotz = rand_range(-max_rotate_speed, max_rotate_speed)

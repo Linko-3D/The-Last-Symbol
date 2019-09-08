@@ -3,26 +3,19 @@
 [ext_resource path="res://Templates/3D/FirstPersonCharacter/FirstPersonCharacter.gd" type="Script" id=1]
 [ext_resource path="res://Templates/3D/HUD/HUD.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Templates/3D/FirstPersonCharacter/Camera/RayCast/RayCast.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Assets/AmmoHold.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Templates/3D/FirstPersonCharacter/Camera/Shoot/Shoot.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Assets/Flare.tscn" type="PackedScene" id=6]
-[ext_resource path="res://SFX/Jump.wav" type="AudioStream" id=7]
-[ext_resource path="res://SFX/Ammo.wav" type="AudioStream" id=8]
-[ext_resource path="res://SFX/Flare.wav" type="AudioStream" id=9]
-[ext_resource path="res://Assets/AutoJump.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Assets/Ammo.tres" type="Material" id=4]
+[ext_resource path="res://Assets/AmmoHold.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Templates/3D/FirstPersonCharacter/Camera/Shoot/Shoot.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Assets/Flare.tscn" type="PackedScene" id=7]
+[ext_resource path="res://SFX/Jump.wav" type="AudioStream" id=8]
+[ext_resource path="res://SFX/Ammo.wav" type="AudioStream" id=9]
+[ext_resource path="res://SFX/Flare.wav" type="AudioStream" id=10]
+[ext_resource path="res://Assets/AutoJump.tscn" type="PackedScene" id=11]
 
 [sub_resource type="CylinderMesh" id=1]
 top_radius = 0.05
 bottom_radius = 0.05
 height = 20.0
-
-[sub_resource type="SpatialMaterial" id=2]
-albedo_color = Color( 0, 1, 1, 1 )
-emission_enabled = true
-emission = Color( 0, 1, 1, 1 )
-emission_energy = 1.0
-emission_operator = 0
-emission_on_uv2 = false
 
 [sub_resource type="CapsuleShape" id=3]
 radius = 0.5
@@ -46,20 +39,20 @@ transform = Transform( 1, 0, 0, 0, -4.37114e-008, -1, 0, 1, -4.37114e-008, 0.5, 
 visible = false
 cast_shadow = 0
 mesh = SubResource( 1 )
-material/0 = SubResource( 2 )
+material/0 = ExtResource( 4 )
 
-[node name="AmmoHold" parent="Camera/RayCast" instance=ExtResource( 4 )]
+[node name="AmmoHold" parent="Camera/RayCast" instance=ExtResource( 5 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -0.5, -1 )
 visible = false
 
 [node name="OmniLight2" type="OmniLight" parent="Camera/RayCast/AmmoHold"]
-light_color = Color( 0, 1, 1, 1 )
+light_color = Color( 0.772549, 0.313726, 0.266667, 1 )
 light_energy = 0.2
 light_indirect_energy = 0.2
 
-[node name="Shoot" parent="Camera" instance=ExtResource( 5 )]
+[node name="Shoot" parent="Camera" instance=ExtResource( 6 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2 )
-bullet = ExtResource( 6 )
+bullet = ExtResource( 7 )
 
 [node name="SpotLight" type="SpotLight" parent="Camera"]
 light_energy = 0.1
@@ -71,16 +64,16 @@ transform = Transform( 1, 0, 0, 0, -4.37114e-008, 1, 0, -1, -4.37114e-008, 0, -0
 shape = SubResource( 3 )
 
 [node name="Jump" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 7 )
+stream = ExtResource( 8 )
 volume_db = -10.0
 
 [node name="Ammo" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 8 )
+stream = ExtResource( 9 )
 volume_db = -15.0
 
 [node name="Flare" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 9 )
+stream = ExtResource( 10 )
 volume_db = -10.0
 
-[node name="AutoJump" parent="." instance=ExtResource( 10 )]
+[node name="AutoJump" parent="." instance=ExtResource( 11 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5, 0 )

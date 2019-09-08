@@ -9,9 +9,9 @@
 [sub_resource type="BoxShape" id=2]
 extents = Vector3( 1, 0.001, 1 )
 
-[sub_resource type="BoxShape" id=5]
+[sub_resource type="BoxShape" id=3]
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=4]
 length = 0.2
 tracks/0/type = "value"
 tracks/0/path = NodePath("Spawn/MeshInstance2:material/0:emission_energy")
@@ -46,8 +46,8 @@ material/0 = ExtResource( 2 )
 
 [node name="SpawnCollision" type="CollisionShape" parent="Spawn"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0 )
-shape = SubResource( 5 )
+shape = SubResource( 3 )
 disabled = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/Color = SubResource( 6 )
+anims/Color = SubResource( 4 )
