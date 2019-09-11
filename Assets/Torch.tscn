@@ -13,9 +13,9 @@ mesh = ExtResource( 2 )
 material/0 = ExtResource( 3 )
 
 [node name="OmniLight" type="OmniLight" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.270087, 0.417531 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.353892, 0.563413 )
 light_color = Color( 0.941176, 0.870588, 0.560784, 1 )
-light_energy = 1.2
-light_indirect_energy = 1.2
+light_energy = 1.1
+light_indirect_energy = 1.1
 shadow_enabled = true
-omni_range = 20.0
+omni_range = 22.0
