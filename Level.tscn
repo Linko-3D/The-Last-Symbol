@@ -21,7 +21,7 @@
 [node name="Level" type="Spatial"]
 
 [node name="FirstPersonCharacter" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 37.6564, -11.3998, -73.6852 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 15, 13 )
 
 [node name="Map" type="Spatial" parent="."]
 
@@ -2651,9 +2651,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8, -8, -70 )
 
 [node name="Canon4" parent="." instance=ExtResource( 16 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 44, -8, -101 )
-
-[node name="DirectionalLight" type="DirectionalLight" parent="."]
-transform = Transform( -0.401402, -0.0582147, -0.91405, 0.722906, 0.592651, -0.355207, 0.562391, -0.803353, -0.195808, 40.188, 9.84324, -12.4346 )
 
 [node name="Coins" parent="." instance=ExtResource( 17 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0, -1 )
