@@ -5,7 +5,7 @@
 [ext_resource path="res://Assets/metal.tres" type="Material" id=3]
 
 [sub_resource type="BoxShape" id=1]
-extents = Vector3( 3, 0.1, 3 )
+extents = Vector3( 3, 0.2, 3 )
 
 [sub_resource type="BoxShape" id=2]
 extents = Vector3( 3, 0, 3 )
