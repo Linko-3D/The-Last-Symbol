@@ -26,10 +26,9 @@ extents = Vector3( 25, 1, 25 )
 [node name="Level" type="Spatial"]
 
 [node name="FirstPersonCharacter" parent="." instance=ExtResource( 1 )]
-transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 0, 14, 11.8048 )
+transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 38.145, -63.9397, -40.6033 )
 
 [node name="Map" type="Spatial" parent="."]
-editor/display_folded = true
 
 [node name="Blocks" type="Spatial" parent="Map"]
 editor/display_folded = true
@@ -2181,6 +2180,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 41, -68, -39 )
 
 [node name="WallSmall303" parent="Map/Wall" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 37, -68, -39 )
+
+[node name="WallSmall307" parent="Map/Wall" instance=ExtResource( 4 )]
+transform = Transform( -4.37114e-008, 0, -1, 0, 1, 0, 1, 0, -4.37114e-008, 35, -68, -41 )
 
 [node name="WallSmall289" parent="Map/Wall" instance=ExtResource( 4 )]
 transform = Transform( -1, 1.91069e-015, 1.31134e-007, -1.31134e-007, 2.50557e-022, -1, -1.91069e-015, -1, 0, 53, -70, -49 )
