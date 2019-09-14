@@ -4135,7 +4135,9 @@ destination = Vector3( 20, -6, -31 )
 [node name="LavaBig" parent="." instance=ExtResource( 19 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 21, -108, -54 )
 
-[node name="StaticBody" type="StaticBody" parent="."]
+[node name="StaticBody" type="StaticBody" parent="." groups=[
+"Boundaries",
+]]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 21, 0 )
 
 [node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
