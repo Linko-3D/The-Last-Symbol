@@ -3,10 +3,11 @@ extends KinematicBody
 const GRAVITY = 9.8
 
 export var speed = 6.0
+export var sprint_speed_multiplier = 1.5
 export var jump_height = 6.5
 export var mouse_sensitivity = 1
 
-var velocity = Vector3()
+var vector = Vector3()
 var snap_distance = -0.1
 var snap = Vector3(0, snap_distance, 0)
 
@@ -20,18 +21,21 @@ func _ready():
 # Keyboard controls and gravity
 
 func _physics_process(delta):
-	velocity.x = 0 # Resets the direction when no key is pressed
-	velocity.z = 0
+	vector.x = 0 # Resets the direction when no key is pressed
+	vector.z = 0
 
 	if Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 		if Input.is_action_pressed("ui_up"):
-			velocity.z = -speed
+			vector.z = -speed
 		if Input.is_action_pressed("ui_down"):
-			velocity.z = speed
+			vector.z = speed
 		if Input.is_action_pressed("ui_left"):
-			velocity.x = -speed
+			vector.x = -speed
 		if Input.is_action_pressed("ui_right"):
-			velocity.x = speed
+			vector.x = speed
+		if Input.is_action_pressed("sprint"):
+			if vector.z < 0:						# If moving forward
+				vector.z *= sprint_speed_multiplier
 		
 		if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 			jump()
@@ -39,10 +43,10 @@ func _physics_process(delta):
 		else:
 			snap = Vector3(0, snap_distance, 0)
 		
-		velocity.y -= GRAVITY * delta # Gravity
+		vector.y -= GRAVITY * delta # Gravity
 
-	velocity = velocity.rotated(Vector3.UP, rotation.y)
-	velocity =  move_and_slide_with_snap(velocity, snap, Vector3.UP, true, 4, 5)
+	vector = vector.rotated(Vector3.UP, rotation.y)
+	vector =  move_and_slide_with_snap(vector, snap, Vector3.UP, true, 4, 5)
 
 	if Input.is_action_just_pressed("flare") and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 		$Flare.play()
@@ -50,7 +54,7 @@ func _physics_process(delta):
 func jump():
 	$Jump.play()
 	snap = Vector3()
-	velocity.y = jump_height
+	vector.y = jump_height
 # ----------------------------------
 # Mouse controls
 
