@@ -11,6 +11,8 @@ var vector = Vector3()
 var snap_distance = -0.1
 var snap = Vector3(0, snap_distance, 0)
 
+var jumped = true
+
 var can_hook = false
 
 func _ready():
@@ -21,6 +23,13 @@ func _ready():
 # Keyboard controls and gravity
 
 func _physics_process(delta):
+	
+	if is_on_floor() != true and jumped == false:
+		jump()
+		jumped = true
+	if is_on_floor():
+		jumped = false
+	
 	vector.x = 0 # Resets the direction when no key is pressed
 	vector.z = 0
 
