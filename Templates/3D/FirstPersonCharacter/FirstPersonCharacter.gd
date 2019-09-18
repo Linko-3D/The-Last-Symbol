@@ -27,9 +27,9 @@ func _ready():
 
 func _physics_process(delta):
 	if ammo > 0:
-		$Camera/AmmoVisual.visible = true
+		$Camera/Aim.visible = true
 	else:
-		$Camera/AmmoVisual.visible = false
+		$Camera/Aim.visible = false
 	
 	if is_on_floor() != true and jumped == false:
 		jump()

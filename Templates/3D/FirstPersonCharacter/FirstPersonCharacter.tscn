@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Templates/3D/FirstPersonCharacter/FirstPersonCharacter.gd" type="Script" id=1]
 [ext_resource path="res://Templates/3D/HUD/HUD.tscn" type="PackedScene" id=2]
@@ -6,10 +6,17 @@
 [ext_resource path="res://Assets/Flare.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Assets/Hook.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Assets/AddObject.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Assets/AmmoVisual.tscn" type="PackedScene" id=7]
-[ext_resource path="res://SFX/Jump.wav" type="AudioStream" id=8]
-[ext_resource path="res://SFX/Ammo.wav" type="AudioStream" id=9]
-[ext_resource path="res://SFX/Flare.wav" type="AudioStream" id=10]
+[ext_resource path="res://Templates/3D/FirstPersonCharacter/Aim.gd" type="Script" id=7]
+[ext_resource path="res://Assets/AmmoVisual.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Assets/Ammo.tres" type="Material" id=9]
+[ext_resource path="res://SFX/Jump.wav" type="AudioStream" id=10]
+[ext_resource path="res://SFX/Ammo.wav" type="AudioStream" id=11]
+[ext_resource path="res://SFX/Flare.wav" type="AudioStream" id=12]
+
+[sub_resource type="CylinderMesh" id=1]
+top_radius = 0.05
+bottom_radius = 0.05
+height = 50.0
 
 [sub_resource type="CapsuleShape" id=2]
 radius = 0.5
@@ -38,22 +45,34 @@ spot_range = 15.0
 
 [node name="AddObject" parent="Camera" instance=ExtResource( 6 )]
 
-[node name="AmmoVisual" parent="Camera" instance=ExtResource( 7 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.769399, -0.597186, -1.09118 )
-visible = false
+[node name="Aim" type="RayCast" parent="Camera"]
+enabled = true
+cast_to = Vector3( 0, 0, -100 )
+script = ExtResource( 7 )
+
+[node name="AmmoVisual" parent="Camera/Aim" instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -0.5, -1 )
+
+[node name="Spatial" type="Spatial" parent="Camera/Aim"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, -0.5, -1 )
+
+[node name="Ray" type="MeshInstance" parent="Camera/Aim/Spatial"]
+transform = Transform( 1, 0, 0, 0, -4.37114e-008, 1, 0, -1, -4.37114e-008, 0, 0, 0 )
+mesh = SubResource( 1 )
+material/0 = ExtResource( 9 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, -4.37114e-008, 1, 0, -1, -4.37114e-008, 0, -0.8, 0 )
 shape = SubResource( 2 )
 
 [node name="Jump" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 8 )
+stream = ExtResource( 10 )
 volume_db = -10.0
 
 [node name="Ammo" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 9 )
+stream = ExtResource( 11 )
 volume_db = -15.0
 
 [node name="Flare" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 10 )
+stream = ExtResource( 12 )
 volume_db = -10.0
