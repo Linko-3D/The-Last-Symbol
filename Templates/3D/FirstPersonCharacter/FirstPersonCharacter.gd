@@ -6,7 +6,6 @@ var ammo = 0
 const GRAVITY = 9.8
 
 export var speed = 6.0
-export var sprint_speed_multiplier = 1.5
 export var jump_height = 6.5
 export var mouse_sensitivity = 1
 
@@ -49,9 +48,6 @@ func _physics_process(delta):
 			vector.x = -speed
 		if Input.is_action_pressed("ui_right"):
 			vector.x = speed
-		if Input.is_action_pressed("sprint"):
-			if vector.z < 0:						# If moving forward
-				vector.z *= sprint_speed_multiplier
 		
 		if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 			jump()
