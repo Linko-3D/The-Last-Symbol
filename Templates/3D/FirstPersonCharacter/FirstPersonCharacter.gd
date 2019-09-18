@@ -1,5 +1,8 @@
 extends KinematicBody
 
+var ammo = 0
+
+
 const GRAVITY = 9.8
 
 export var speed = 6.0
@@ -23,6 +26,10 @@ func _ready():
 # Keyboard controls and gravity
 
 func _physics_process(delta):
+	if ammo > 0:
+		$Camera/AmmoVisual.visible = true
+	else:
+		$Camera/AmmoVisual.visible = false
 	
 	if is_on_floor() != true and jumped == false:
 		jump()

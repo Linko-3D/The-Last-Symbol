@@ -10,12 +10,12 @@ func _process(delta):
 		$AmmoHold.visible = true
 	else:
 		$AmmoHold.visible = false
-		$Ray.visible = false
+		$AmmoHold/Ray.visible = false
 
 func _input(event):
 	if ammo >= 1:
 		if get_collider() != null and get_collider().has_method("spawn"):
-			$Ray.visible = true
+			$AmmoHold/Ray.visible = true
 			if event is InputEventMouseButton and Input.get_mouse_mode() == Input.MOUSE_MODE_CAPTURED:
 				
 				if event.button_index == 1 and event.pressed == true:
@@ -24,4 +24,4 @@ func _input(event):
 					ammo -= 1
 					$SpellSound.play()
 		else:
-			$Ray.visible = false
+			$AmmoHold/Ray.visible = false
