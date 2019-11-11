@@ -22,7 +22,7 @@ config/icon="res://icon.png"
 [autoload]
 
 Music="*res://Assets/Music.tscn"
-Singleton="*res://Singleton.gd"
+Pause="*res://Templates/Singletons/Pause.gd"
 
 [importer_defaults]
 

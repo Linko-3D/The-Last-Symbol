@@ -1,7 +1,7 @@
 extends KinematicBody
 
 export var speed = 6.5
-export var jump_height = 8.0
+export var jump_height = 10.0
 export var mouse_sensitivity = 1.0
 
 var vector = Vector3()
@@ -29,8 +29,7 @@ func _physics_process(delta):
 	
 	vector.y -= gravity * delta
 	
-	vector = move_and_slide_with_snap(vector, snap_vector, Vector3.UP, false, 4, PI, false)
-
+	vector = move_and_slide(vector, Vector3.UP)
 func _input(event):
 	if event is InputEventMouseMotion:
 		rotation_degrees.y -= event.relative.x * mouse_sensitivity / 10			# Look left and right
