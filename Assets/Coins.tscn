@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Assets/coins.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://Assets/Textures/T_coins_a.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Textures/T_coins_ao.png" type="Texture" id=3]
+[ext_resource path="res://Assets/Textures/T_coins_h.png" type="Texture" id=4]
+[ext_resource path="res://Assets/Textures/T_coins_n.png" type="Texture" id=5]
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_texture = ExtResource( 2 )
+metallic = 0.6
+roughness = 0.2
+normal_enabled = true
+normal_scale = 1.0
+normal_texture = ExtResource( 5 )
+ao_enabled = true
+ao_light_affect = 0.0
+ao_texture = ExtResource( 3 )
+ao_on_uv2 = false
+ao_texture_channel = 0
+depth_enabled = true
+depth_scale = -0.2
+depth_deep_parallax = true
+depth_min_layers = 8
+depth_max_layers = 32
+depth_flip_tangent = false
+depth_flip_binormal = false
+depth_texture = ExtResource( 4 )
+uv1_scale = Vector3( 3, 3, 3 )
+
+[node name="Coins" type="Spatial"]
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
