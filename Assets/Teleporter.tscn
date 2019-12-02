@@ -1,12 +1,11 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://Templates/3D/Interactive/Teleporter/Teleporter.gd" type="Script" id=1]
+[ext_resource path="res://Templates/Interactive/Teleporter/Teleporter.gd" type="Script" id=1]
 [ext_resource path="res://Assets/teleporter.obj" type="ArrayMesh" id=2]
 [ext_resource path="res://Assets/teleporter 2.obj" type="ArrayMesh" id=3]
 [ext_resource path="res://Assets/metal.tres" type="Material" id=4]
 [ext_resource path="res://Assets/teleporter 3.obj" type="ArrayMesh" id=5]
 [ext_resource path="res://Assets/Ammo.tres" type="Material" id=6]
-[ext_resource path="res://SFX/Teleporter.wav" type="AudioStream" id=7]
 
 [sub_resource type="CylinderShape" id=1]
 height = 0.5
@@ -30,11 +29,10 @@ material/0 = ExtResource( 6 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.199899, 0 )
 shape = SubResource( 1 )
 
-[node name="TeleporterSound" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 7 )
-volume_db = -10.0
-
 [node name="OmniLight" type="OmniLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.05, 0 )
 light_color = Color( 0.772549, 0.313726, 0.266667, 1 )
-[connection signal="body_entered" from="." to="." method="_on_TeleporterA_body_entered"]
+
+[node name="Destination" type="Position3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0 )
+[connection signal="body_entered" from="." to="." method="_on_Teleporter_body_entered"]
