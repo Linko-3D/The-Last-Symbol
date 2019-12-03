@@ -24,6 +24,10 @@ config/icon="res://icon.png"
 Music="*res://Assets/Music.tscn"
 Pause="*res://Templates/Singletons/Pause.gd"
 
+[display]
+
+window/size/fullscreen=true
+
 [importer_defaults]
 
 texture={

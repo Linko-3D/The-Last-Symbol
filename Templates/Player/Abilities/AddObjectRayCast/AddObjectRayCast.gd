@@ -18,7 +18,6 @@ func _input(event):
 
 			snap = get_collision_point()
 			snap.x = stepify(get_collision_point().x, 2)
-			snap.y = stepify(get_collision_point().y, 2)
 			snap.z = stepify(get_collision_point().z, 2)
 			
 			get_tree().get_root().add_child(object_instance)

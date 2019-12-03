@@ -4,6 +4,8 @@ export var speed = 8.5
 export var jump_height = 9.0
 export var mouse_sensitivity = 1.0
 
+var can_hook = false
+
 var ammo = 0
 
 var vector = Vector3()
@@ -34,6 +36,9 @@ func _physics_process(delta):
 	
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		vector.y = jump_height
+	
+	if Input.is_action_just_pressed("restart"):
+		get_tree().reload_current_scene()
 	
 	vector.y -= gravity * delta
 	
