@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Templates/Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Textures/Crosshair.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Templates/Player/Abilities/AddObjectRayCast/AddObjectRayCast.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Templates/Player/Holding.gd" type="Script" id=5]
 [ext_resource path="res://Assets/AmmoVisual.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Assets/Red.tres" type="Material" id=7]
 
 [sub_resource type="CapsuleMesh" id=1]
 radius = 0.5
@@ -17,6 +18,7 @@ radius = 0.5
 top_radius = 0.05
 bottom_radius = 0.05
 height = 50.0
+radial_segments = 32
 
 [node name="Player" type="KinematicBody" groups=[
 "Player",
@@ -45,13 +47,16 @@ texture = ExtResource( 2 )
 
 [node name="AddObjectRayCast" parent="Camera" instance=ExtResource( 4 )]
 
-[node name="Holding" type="Spatial" parent="Camera"]
+[node name="Holding" type="Spatial" parent="Camera/AddObjectRayCast"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.605217, -0.542785, -0.981843 )
+visible = false
 script = ExtResource( 5 )
 
-[node name="Visor" type="MeshInstance" parent="Camera/Holding"]
-transform = Transform( 1, 0, 0, 0, -4.37114e-008, 1, 0, -1, -4.37114e-008, 0, 0, 0 )
-mesh = SubResource( 3 )
-material/0 = null
+[node name="AmmoVisual" parent="Camera/AddObjectRayCast/Holding" instance=ExtResource( 6 )]
 
-[node name="AmmoVisual" parent="Camera/Holding" instance=ExtResource( 6 )]
+[node name="AIM" type="Spatial" parent="Camera/AddObjectRayCast/Holding"]
+
+[node name="Visor" type="MeshInstance" parent="Camera/AddObjectRayCast/Holding/AIM"]
+transform = Transform( 1, 0, 0, 0, -1.62921e-007, -1, 0, 1, -1.62921e-007, 0, 0, 0 )
+mesh = SubResource( 3 )
+material/0 = ExtResource( 7 )

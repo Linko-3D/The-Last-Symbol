@@ -7,5 +7,5 @@ func _ready():
 
 func _on_AmmoSpawn_body_entered(body):
 	if player.ammo == 0:
-		player.ammo += 1
+		player.ammo = 1
 		queue_free()

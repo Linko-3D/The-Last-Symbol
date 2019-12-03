@@ -2,7 +2,9 @@
 
 [ext_resource path="res://Assets/AmmoHold.gd" type="Script" id=1]
 [ext_resource path="res://Assets/ammo.obj" type="ArrayMesh" id=2]
-[ext_resource path="res://Assets/Ammo.tres" type="Material" id=3]
+[ext_resource path="res://Assets/Red.tres" type="Material" id=3]
+
+
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_color = Color( 0, 0, 0, 1 )

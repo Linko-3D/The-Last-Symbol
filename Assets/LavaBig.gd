@@ -8,7 +8,6 @@ func _ready():
 
 func _process(delta):
 	distance = target.translation.y - translation.y
-	print(distance)
 	
 	if target.can_hook and translation.y < 10:
 		translation.y += speed * delta

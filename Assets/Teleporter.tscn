@@ -5,7 +5,9 @@
 [ext_resource path="res://Assets/teleporter 2.obj" type="ArrayMesh" id=3]
 [ext_resource path="res://Assets/metal.tres" type="Material" id=4]
 [ext_resource path="res://Assets/teleporter 3.obj" type="ArrayMesh" id=5]
-[ext_resource path="res://Assets/Ammo.tres" type="Material" id=6]
+[ext_resource path="res://Assets/Red.tres" type="Material" id=6]
+
+
 
 [sub_resource type="CylinderShape" id=1]
 height = 0.5

@@ -6,22 +6,30 @@ export var mouse_sensitivity = 1.0
 
 var can_hook = false
 
+var i = 0
+
 var ammo = 0
 
 var vector = Vector3()
 var gravity = 20.0
 
+func _ready():
+	ammo = 0
 
 func _process(delta):
+	if can_hook == true:
+		Music.pitch_scale = 1.1
+	else:
+		Music.pitch_scale = 1
 	$Camera/Crosshair.position = Vector2(OS.window_size.x / 2, OS.window_size.y / 2)
 	$Camera/Crosshair.position = Vector2(OS.window_size.x / 2, OS.window_size.y / 2)
 
 
 func _physics_process(delta):
 	if ammo == 0:
-		$Camera/Holding.visible = false
+		$Camera/AddObjectRayCast/Holding.visible = false
 	else:
-		$Camera/Holding.visible = true
+		$Camera/AddObjectRayCast/Holding.visible = true
 	vector.x = 0
 	vector.z = 0
 	
