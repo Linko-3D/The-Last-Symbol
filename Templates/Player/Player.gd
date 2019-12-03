@@ -19,9 +19,9 @@ func _process(delta):
 
 func _physics_process(delta):
 	if ammo == 0:
-		$Camera/AmmoVisual.visible = false
+		$Camera/Holding.visible = false
 	else:
-		$Camera/AmmoVisual.visible = true
+		$Camera/Holding.visible = true
 	vector.x = 0
 	vector.z = 0
 	

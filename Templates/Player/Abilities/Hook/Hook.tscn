@@ -2,8 +2,8 @@
 
 [ext_resource path="res://Templates/Player/Abilities/Hook/Hook.gd" type="Script" id=1]
 
-
 [node name="Hook" type="RayCast"]
 enabled = true
-cast_to = Vector3( 0, 0, -20 )
+cast_to = Vector3( 0, 0, -1000 )
 script = ExtResource( 1 )
+pull_force = 70.0

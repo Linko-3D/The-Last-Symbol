@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Assets/Block.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Wall.tscn" type="PackedScene" id=2]
@@ -11,14 +11,14 @@
 [ext_resource path="res://Assets/Spikes Ball.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Assets/Stairs.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Assets/Lava.tscn" type="PackedScene" id=11]
-[ext_resource path="res://Templates/Player/Player.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Assets/LavaBig.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Templates/Player/Player.tscn" type="PackedScene" id=13]
 
 [node name="Level" type="Spatial"]
 
 [node name="Map" type="Spatial" parent="."]
 
 [node name="Blocks" type="Spatial" parent="Map"]
-editor/display_folded = true
 
 [node name="Block1738" parent="Map/Blocks" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 5, -6 )
@@ -66,7 +66,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 1, -12 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 1, -12 )
 
 [node name="Block1753" parent="Map/Blocks" instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 3, -12 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 3.02185, -12 )
 
 [node name="Block1793" parent="Map/Blocks" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 33, -35, -100 )
@@ -2910,7 +2910,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 57, 11, -6 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28, -102, -30 )
 
 [node name="Ground" type="Spatial" parent="Map"]
-editor/display_folded = true
 
 [node name="Ground15" parent="Map/Ground" instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12, 10 )
@@ -4132,8 +4131,11 @@ transform = Transform( 1, 0, 0, 0, -4.37114e-008, -1, 0, 1, -4.37114e-008, 28, -
 [node name="Lava58" parent="Map/Lava" instance=ExtResource( 11 )]
 transform = Transform( 1, 0, 0, 0, -4.37114e-008, -1, 0, 1, -4.37114e-008, 28, -105, -51 )
 
-[node name="Player" parent="." instance=ExtResource( 12 )]
-transform = Transform( 0.00323284, 0, 0.999995, 0, 1, 0, -0.999995, 0, 0.00323284, 40.0506, -64.5264, -40.7688 )
+[node name="LavaBig" parent="Map" instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.8184, -108.203, -52.7043 )
+
+[node name="Player" parent="." instance=ExtResource( 13 )]
+transform = Transform( 0.999995, 0, -0.00323288, 0, 1, 0, 0.00323288, 0, 0.999995, -1.9646, 13.0566, 14.9258 )
 
 [editable path="Map/Interactive/Teleporter"]
 

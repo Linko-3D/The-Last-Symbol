@@ -11,7 +11,7 @@ func _ready():
 	player = get_tree().get_nodes_in_group("Player")[0] # Get the first node in the group "Player"
 
 func _process(delta):
-	if hold:
+	if hold and player.can_hook:
 		vector = (destination - player.translation).normalized()
 		player.move_and_slide(vector * pull_force)
 
