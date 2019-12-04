@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Templates/Player/Player.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Textures/Crosshair.png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Templates/Player/Holding.gd" type="Script" id=5]
 [ext_resource path="res://Assets/AmmoVisual.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Assets/Red.tres" type="Material" id=7]
+[ext_resource path="res://Assets/hook.obj" type="ArrayMesh" id=8]
 
 [sub_resource type="CapsuleMesh" id=1]
 radius = 0.5
@@ -60,3 +61,11 @@ script = ExtResource( 5 )
 transform = Transform( 1, 0, 0, 0, -1.62921e-007, -1, 0, 1, -1.62921e-007, 0, 0, 0 )
 mesh = SubResource( 3 )
 material/0 = ExtResource( 7 )
+
+[node name="HookModel" type="MeshInstance" parent="Camera"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.798057, -0.543508, -0.576994 )
+mesh = ExtResource( 8 )
+material/0 = null
+
+[node name="SpotLight" type="SpotLight" parent="."]
+spot_range = 30.0
