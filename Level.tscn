@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Assets/Block.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Assets/Wall.tscn" type="PackedScene" id=2]
@@ -12,13 +12,15 @@
 [ext_resource path="res://Assets/Stairs.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Assets/Lava.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Assets/LavaBig.tscn" type="PackedScene" id=12]
-[ext_resource path="res://Templates/Player/Player.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Assets/Pillar.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Templates/Player/Player.tscn" type="PackedScene" id=14]
 
 [node name="Level" type="Spatial"]
 
 [node name="Map" type="Spatial" parent="."]
 
 [node name="Blocks" type="Spatial" parent="Map"]
+editor/display_folded = true
 
 [node name="Block1738" parent="Map/Blocks" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 5, -6 )
@@ -333,6 +335,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 11, 6 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 11, 6 )
 
 [node name="Wall" type="Spatial" parent="Map"]
+editor/display_folded = true
 
 [node name="Wall" parent="Map/Wall" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 11, -13 )
@@ -3051,6 +3054,7 @@ transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 19, 1
 transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 19, 14, -27 )
 
 [node name="Interactive" type="Spatial" parent="Map"]
+editor/display_folded = true
 
 [node name="Ammo" parent="Map/Interactive" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 5, -10 )
@@ -3092,6 +3096,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 57, 11, -6 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28, -102, -30 )
 
 [node name="Ground" type="Spatial" parent="Map"]
+editor/display_folded = true
 
 [node name="Ground15" parent="Map/Ground" instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12, 10 )
@@ -3301,6 +3306,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 2 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 2 )
 
 [node name="Spikes" type="Spatial" parent="Map"]
+editor/display_folded = true
 
 [node name="Spikes" parent="Map/Spikes" instance=ExtResource( 8 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, -24, -44 )
@@ -3630,6 +3636,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 36, -54, -122 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 30, -54, -122 )
 
 [node name="Ball Spikes" type="Spatial" parent="Map"]
+editor/display_folded = true
 
 [node name="Spikes Ball" parent="Map/Ball Spikes" instance=ExtResource( 9 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 34, -10, -60 )
@@ -4057,6 +4064,7 @@ start_pause = 0.5
 end_pause = 0.5
 
 [node name="Stairs" type="Spatial" parent="Map"]
+editor/display_folded = true
 
 [node name="Stairs4" parent="Map/Stairs" instance=ExtResource( 10 )]
 transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 20, 2, -20 )
@@ -4107,6 +4115,7 @@ transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 0, 6,
 transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 0, 10, 2 )
 
 [node name="Lava" type="Spatial" parent="Map"]
+editor/display_folded = true
 
 [node name="Lava17" parent="Map/Lava" instance=ExtResource( 11 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40, -84, -72 )
@@ -4342,7 +4351,12 @@ transform = Transform( 1, 0, 0, 0, -4.37114e-008, -1, 0, 1, -4.37114e-008, 28, -
 [node name="LavaBig" parent="Map" instance=ExtResource( 12 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.8184, -108.203, -52.7043 )
 
-[node name="Player" parent="." instance=ExtResource( 13 )]
+[node name="Pillar" type="Spatial" parent="Map"]
+
+[node name="Pillar" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 55, -74, -73 )
+
+[node name="Player" parent="." instance=ExtResource( 14 )]
 transform = Transform( -0.104976, 0, 0.994475, 0, 1, 0, -0.994475, 0, -0.104976, 39.4517, -63.8926, -41.584 )
 
 [editable path="Map/Interactive/Teleporter"]
