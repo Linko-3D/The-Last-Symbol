@@ -4370,7 +4370,6 @@ transform = Transform( 1, 0, 0, 0, -4.37114e-008, -1, 0, 1, -4.37114e-008, 28, -
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.8184, -108.203, -52.7043 )
 
 [node name="Pillar" type="Spatial" parent="Map"]
-editor/display_folded = true
 
 [node name="Pillar" parent="Map/Pillar" instance=ExtResource( 13 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48, -84, -93 )
@@ -4828,6 +4827,12 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.99979, 6.00501, -2.99899 )
 [node name="Pillar196" parent="Map/Pillar" instance=ExtResource( 13 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.9998, 6.00501, -2.99899 )
 
+[node name="Pillar206" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.99979, 6.00501, 7.00101 )
+
+[node name="Pillar207" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.99979, 6.00501, 19.001 )
+
 [node name="Pillar198" parent="Map/Pillar" instance=ExtResource( 13 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.9998, 6.00501, 5.00101 )
 
@@ -4988,7 +4993,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, -64, -80 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31, -64, -93 )
 
 [node name="Player" parent="." instance=ExtResource( 14 )]
-transform = Transform( -0.104976, 0, 0.994475, 0, 1, 0, -0.994475, 0, -0.104976, 1.34204, 14.4568, 11.8762 )
+transform = Transform( 0.99984, 0, 0.0179023, 0, 1, 0, -0.0179023, 0, 0.99984, -1.65796, 14.4568, 12.8762 )
 
 [editable path="Map/Interactive/Teleporter"]
 
