@@ -335,6 +335,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 11, 6 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 11, 6 )
 
 [node name="Wall" type="Spatial" parent="Map"]
+editor/display_folded = true
 
 [node name="Wall" parent="Map/Wall" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 11, -13 )
@@ -2417,7 +2418,7 @@ transform = Transform( -1.06581e-014, 0, 1, -1, 1.91069e-015, -1.06581e-014, -1.
 transform = Transform( 1, -1.91069e-015, -4.37114e-008, 4.37114e-008, -8.35189e-023, 1, -1.91069e-015, -1, 0, 53, -66, -49 )
 
 [node name="WallSmall288" parent="Map/Wall" instance=ExtResource( 3 )]
-transform = Transform( -8.74228e-008, 1.67038e-022, -1, 1, -1.91069e-015, -8.74228e-008, -1.91069e-015, -1, 0, 51, -68, -49 )
+transform = Transform( -8.74228e-008, 1.67038e-022, -1, 1, -1.91069e-015, -8.74228e-008, -1.91069e-015, -1, 0, 50.9999, -68, -48.9984 )
 
 [node name="WallSmall292" parent="Map/Wall" instance=ExtResource( 3 )]
 transform = Transform( -8.74228e-008, 1.67038e-022, -1, 1, -1.91069e-015, -8.74228e-008, -1.91069e-015, -1, 0, 51, -68, -45 )
@@ -3095,6 +3096,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 57, 11, -6 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28, -102, -30 )
 
 [node name="Ground" type="Spatial" parent="Map"]
+editor/display_folded = true
 
 [node name="Ground15" parent="Map/Ground" instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12, 10 )
@@ -4062,6 +4064,7 @@ start_pause = 0.5
 end_pause = 0.5
 
 [node name="Stairs" type="Spatial" parent="Map"]
+editor/display_folded = true
 
 [node name="Stairs4" parent="Map/Stairs" instance=ExtResource( 10 )]
 transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 20, 2, -20 )
@@ -4085,7 +4088,19 @@ transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 52, -
 transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 52, -76, -76 )
 
 [node name="Stairs27" parent="Map/Stairs" instance=ExtResource( 10 )]
-transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 54, -76, -76 )
+transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 54, -76.002, -76.004 )
+
+[node name="Stairs28" parent="Map/Stairs" instance=ExtResource( 10 )]
+transform = Transform( -0.892114, 0.0743842, -0.445645, 0.00516105, 0.987968, 0.154573, 0.451781, 0.135597, -0.881764, 53.0644, -83.7078, -82.9631 )
+
+[node name="Stairs31" parent="Map/Stairs" instance=ExtResource( 10 )]
+transform = Transform( -0.72469, 0.153823, -0.671687, -0.175669, 0.901316, 0.395941, 0.666307, 0.404929, -0.626153, 49.9144, -83.934, -86.7548 )
+
+[node name="Stairs29" parent="Map/Stairs" instance=ExtResource( 10 )]
+transform = Transform( -0.892114, 0.0743842, -0.445645, 0.00516105, 0.987968, 0.154573, 0.451781, 0.135597, -0.881764, 51.2802, -83.6975, -82.0595 )
+
+[node name="Stairs30" parent="Map/Stairs" instance=ExtResource( 10 )]
+transform = Transform( -0.72469, 0.153823, -0.671687, -0.175669, 0.901316, 0.395941, 0.666307, 0.404929, -0.626153, 48.465, -84.2853, -85.4222 )
 
 [node name="Stairs23" parent="Map/Stairs" instance=ExtResource( 10 )]
 transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 52, -68, -54 )
@@ -4355,12 +4370,301 @@ transform = Transform( 1, 0, 0, 0, -4.37114e-008, -1, 0, 1, -4.37114e-008, 28, -
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17.8184, -108.203, -52.7043 )
 
 [node name="Pillar" type="Spatial" parent="Map"]
+editor/display_folded = true
 
 [node name="Pillar" parent="Map/Pillar" instance=ExtResource( 13 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48, -84, -93 )
 
 [node name="Pillar4" parent="Map/Pillar" instance=ExtResource( 13 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 39, -84, -93 )
+
+[node name="Pillar10" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 27, -84, -93 )
+
+[node name="Pillar14" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19, -84, -93 )
+
+[node name="Pillar18" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11, -84, -93 )
+
+[node name="Pillar19" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -84, -93 )
+
+[node name="Pillar22" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, -84, -93 )
+
+[node name="Pillar25" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, -84, -86 )
+
+[node name="Pillar28" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.99962, -83.9965, -72.9992 )
+
+[node name="Pillar34" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.00038, -83.9965, -72.9992 )
+
+[node name="Pillar37" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0004, -83.9965, -72.9992 )
+
+[node name="Pillar40" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.0004, -83.9965, -72.9992 )
+
+[node name="Pillar45" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 27.0004, -83.9965, -72.9992 )
+
+[node name="Pillar47" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31.0004, -83.9965, -72.9992 )
+
+[node name="Pillar50" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31.0004, -83.9965, -66.9992 )
+
+[node name="Pillar53" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 23.0004, -83.9965, -66.9992 )
+
+[node name="Pillar57" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.0004, -83.9965, -66.9992 )
+
+[node name="Pillar58" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.00038, -83.9965, -66.9992 )
+
+[node name="Pillar63" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.00038, -83.9965, -66.9992 )
+
+[node name="Pillar66" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.00038, -83.9965, -58.9992 )
+
+[node name="Pillar69" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -83.995, -50.999 )
+
+[node name="Pillar73" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -83.995, -42.999 )
+
+[node name="Pillar83" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -83.995, -34.999 )
+
+[node name="Pillar90" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -83.995, -26.999 )
+
+[node name="Pillar95" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -83.995, -18.999 )
+
+[node name="Pillar99" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -83.995, -8.99899 )
+
+[node name="Pillar105" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.9998, -83.995, -8.99899 )
+
+[node name="Pillar110" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.9998, -83.995, -8.99899 )
+
+[node name="Pillar116" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.9998, -83.995, -8.99899 )
+
+[node name="Pillar123" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 32.9998, -83.995, -8.99899 )
+
+[node name="Pillar129" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40.9998, -83.995, -8.99899 )
+
+[node name="Pillar135" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48.9998, -83.995, -8.99899 )
+
+[node name="Pillar142" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -83.995, -8.99899 )
+
+[node name="Pillar145" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -83.995, -18.999 )
+
+[node name="Pillar156" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -83.995, -26.999 )
+
+[node name="Pillar161" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -83.995, -34.999 )
+
+[node name="Pillar167" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -83.995, -42.999 )
+
+[node name="Pillar174" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -83.995, -50.999 )
+
+[node name="Pillar177" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -83.995, -58.999 )
+
+[node name="Pillar180" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -83.995, -66.999 )
+
+[node name="Pillar182" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -83.995, -74.999 )
+
+[node name="Pillar184" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -83.995, -82.999 )
+
+[node name="Pillar189" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -83.995, -92.999 )
+
+[node name="Pillar70" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -93.995, -50.999 )
+
+[node name="Pillar76" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -93.995, -42.999 )
+
+[node name="Pillar84" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -93.995, -34.999 )
+
+[node name="Pillar86" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -93.995, -26.999 )
+
+[node name="Pillar94" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -93.995, -18.999 )
+
+[node name="Pillar97" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -93.995, -8.99899 )
+
+[node name="Pillar104" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.9998, -93.995, -8.99899 )
+
+[node name="Pillar111" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.9998, -93.995, -8.99899 )
+
+[node name="Pillar117" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.9998, -93.995, -8.99899 )
+
+[node name="Pillar124" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 32.9998, -93.995, -8.99899 )
+
+[node name="Pillar130" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40.9998, -93.995, -8.99899 )
+
+[node name="Pillar136" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48.9998, -93.995, -8.99899 )
+
+[node name="Pillar144" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -93.995, -8.99899 )
+
+[node name="Pillar146" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -93.995, -18.999 )
+
+[node name="Pillar152" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -93.995, -26.999 )
+
+[node name="Pillar158" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -93.995, -34.999 )
+
+[node name="Pillar165" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -93.995, -42.999 )
+
+[node name="Pillar171" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -93.995, -50.999 )
+
+[node name="Pillar71" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -103.995, -50.999 )
+
+[node name="Pillar77" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -103.995, -42.999 )
+
+[node name="Pillar82" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -103.995, -34.999 )
+
+[node name="Pillar89" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -103.995, -26.999 )
+
+[node name="Pillar93" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -103.995, -18.999 )
+
+[node name="Pillar98" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -103.995, -8.99899 )
+
+[node name="Pillar103" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.9998, -103.995, -8.99899 )
+
+[node name="Pillar109" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.9998, -103.995, -8.99899 )
+
+[node name="Pillar115" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.9998, -103.995, -8.99899 )
+
+[node name="Pillar122" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 32.9998, -103.995, -8.99899 )
+
+[node name="Pillar128" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40.9998, -103.995, -8.99899 )
+
+[node name="Pillar137" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48.9998, -103.995, -8.99899 )
+
+[node name="Pillar141" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -103.995, -8.99899 )
+
+[node name="Pillar148" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -103.995, -18.999 )
+
+[node name="Pillar155" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -103.995, -26.999 )
+
+[node name="Pillar162" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -103.995, -34.999 )
+
+[node name="Pillar168" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -103.995, -42.999 )
+
+[node name="Pillar172" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -103.995, -50.999 )
+
+[node name="Pillar72" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -113.995, -50.999 )
+
+[node name="Pillar78" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -113.995, -42.999 )
+
+[node name="Pillar79" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -113.995, -34.999 )
+
+[node name="Pillar85" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -113.995, -26.999 )
+
+[node name="Pillar91" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -113.995, -18.999 )
+
+[node name="Pillar100" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -113.995, -8.99899 )
+
+[node name="Pillar106" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.9998, -113.995, -8.99899 )
+
+[node name="Pillar112" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.9998, -113.995, -8.99899 )
+
+[node name="Pillar118" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.9998, -113.995, -8.99899 )
+
+[node name="Pillar125" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 32.9998, -113.995, -8.99899 )
+
+[node name="Pillar131" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40.9998, -113.995, -8.99899 )
+
+[node name="Pillar138" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48.9998, -113.995, -8.99899 )
+
+[node name="Pillar139" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -113.995, -8.99899 )
+
+[node name="Pillar147" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -113.995, -18.999 )
+
+[node name="Pillar151" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -113.995, -26.999 )
+
+[node name="Pillar157" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -113.995, -34.999 )
+
+[node name="Pillar164" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -113.995, -42.999 )
+
+[node name="Pillar169" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -113.995, -50.999 )
+
+[node name="Pillar31" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, -84, -80 )
 
 [node name="Pillar7" parent="Map/Pillar" instance=ExtResource( 13 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31, -84, -93 )
@@ -4371,6 +4675,180 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48, -74, -93 )
 [node name="Pillar5" parent="Map/Pillar" instance=ExtResource( 13 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 39, -74, -93 )
 
+[node name="Pillar11" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 27, -74, -93 )
+
+[node name="Pillar15" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19, -74, -93 )
+
+[node name="Pillar16" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11, -74, -93 )
+
+[node name="Pillar20" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -74, -93 )
+
+[node name="Pillar23" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, -74, -93 )
+
+[node name="Pillar26" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, -74, -86 )
+
+[node name="Pillar29" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.99962, -73.9965, -72.9992 )
+
+[node name="Pillar35" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.00038, -73.9965, -72.9992 )
+
+[node name="Pillar38" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11.0004, -73.9965, -72.9992 )
+
+[node name="Pillar42" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19.0004, -73.9965, -72.9992 )
+
+[node name="Pillar43" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 27.0004, -73.9965, -72.9992 )
+
+[node name="Pillar48" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31.0004, -73.9965, -72.9992 )
+
+[node name="Pillar51" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31.0004, -73.9965, -66.9992 )
+
+[node name="Pillar54" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 23.0004, -73.9965, -66.9992 )
+
+[node name="Pillar55" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15.0004, -73.9965, -66.9992 )
+
+[node name="Pillar60" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.00038, -73.9965, -66.9992 )
+
+[node name="Pillar61" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.00038, -73.9965, -66.9992 )
+
+[node name="Pillar65" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.00038, -73.9965, -58.9992 )
+
+[node name="Pillar68" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -73.995, -50.999 )
+
+[node name="Pillar75" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -73.995, -42.999 )
+
+[node name="Pillar81" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -73.995, -34.999 )
+
+[node name="Pillar88" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -73.995, -26.999 )
+
+[node name="Pillar92" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -73.995, -18.999 )
+
+[node name="Pillar102" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.999796, -73.995, -8.99899 )
+
+[node name="Pillar108" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 8.9998, -73.995, -8.99899 )
+
+[node name="Pillar113" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.9998, -73.995, -8.99899 )
+
+[node name="Pillar119" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 24.9998, -73.995, -8.99899 )
+
+[node name="Pillar121" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 32.9998, -73.995, -8.99899 )
+
+[node name="Pillar127" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40.9998, -73.995, -8.99899 )
+
+[node name="Pillar133" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48.9998, -73.995, -8.99899 )
+
+[node name="Pillar143" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -73.995, -8.99899 )
+
+[node name="Pillar149" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -73.995, -18.999 )
+
+[node name="Pillar153" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -73.995, -26.999 )
+
+[node name="Pillar159" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -73.995, -34.999 )
+
+[node name="Pillar163" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -73.995, -42.999 )
+
+[node name="Pillar170" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -73.995, -50.999 )
+
+[node name="Pillar175" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -73.995, -58.999 )
+
+[node name="Pillar178" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -73.995, -66.999 )
+
+[node name="Pillar181" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -73.995, -74.999 )
+
+[node name="Pillar190" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.00021, -3.99499, -12.999 )
+
+[node name="Pillar192" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.99979, -3.99499, -12.999 )
+
+[node name="Pillar195" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.99979, -3.99499, -2.99899 )
+
+[node name="Pillar197" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.9998, -3.99499, -2.99899 )
+
+[node name="Pillar199" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.9998, -3.99499, 5.00101 )
+
+[node name="Pillar201" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.99979, -3.99499, 5.00101 )
+
+[node name="Pillar203" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.9998, -3.99499, -16.999 )
+
+[node name="Pillar204" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.9998, -3.99499, -16.999 )
+
+[node name="Pillar191" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.00021, 6.00501, -12.999 )
+
+[node name="Pillar193" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.99979, 6.00501, -12.999 )
+
+[node name="Pillar194" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 6.99979, 6.00501, -2.99899 )
+
+[node name="Pillar196" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.9998, 6.00501, -2.99899 )
+
+[node name="Pillar198" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.9998, 6.00501, 5.00101 )
+
+[node name="Pillar200" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.99979, 6.00501, 5.00101 )
+
+[node name="Pillar202" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 16.9998, 6.00501, -16.999 )
+
+[node name="Pillar205" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.9998, 6.00501, -16.999 )
+
+[node name="Pillar186" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -73.995, -82.999 )
+
+[node name="Pillar188" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 54.9998, -73.995, -92.999 )
+
+[node name="Pillar32" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, -74, -80 )
+
 [node name="Pillar9" parent="Map/Pillar" instance=ExtResource( 13 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31, -74, -93 )
 
@@ -4380,11 +4858,137 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 48, -64, -93 )
 [node name="Pillar6" parent="Map/Pillar" instance=ExtResource( 13 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 39, -64, -93 )
 
+[node name="Pillar12" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 27, -64, -93 )
+
+[node name="Pillar13" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19, -64, -93 )
+
+[node name="Pillar17" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11, -64, -93 )
+
+[node name="Pillar21" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -64, -93 )
+
+[node name="Pillar24" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, -64, -93 )
+
+[node name="Pillar27" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, -64, -86 )
+
+[node name="Pillar30" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, -64, -73 )
+
+[node name="Pillar36" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3, -64, -73 )
+
+[node name="Pillar39" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 11, -64, -73 )
+
+[node name="Pillar41" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19, -64, -73 )
+
+[node name="Pillar44" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 27, -64, -73 )
+
+[node name="Pillar46" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31, -64, -73 )
+
+[node name="Pillar49" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31, -64, -67 )
+
+[node name="Pillar52" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 23, -64, -67 )
+
+[node name="Pillar56" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, -64, -67 )
+
+[node name="Pillar59" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, -64, -67 )
+
+[node name="Pillar62" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -64, -67 )
+
+[node name="Pillar64" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -64, -59 )
+
+[node name="Pillar67" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -64, -51 )
+
+[node name="Pillar74" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -64, -43 )
+
+[node name="Pillar80" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -64, -35 )
+
+[node name="Pillar87" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -64, -27 )
+
+[node name="Pillar96" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -64, -19 )
+
+[node name="Pillar101" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -64, -9 )
+
+[node name="Pillar107" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 9, -64, -9 )
+
+[node name="Pillar114" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 17, -64, -9 )
+
+[node name="Pillar120" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 25, -64, -9 )
+
+[node name="Pillar126" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 33, -64, -9 )
+
+[node name="Pillar132" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 41, -64, -9 )
+
+[node name="Pillar134" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 49, -64, -9 )
+
+[node name="Pillar140" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 55, -64, -9 )
+
+[node name="Pillar150" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 55, -64, -19 )
+
+[node name="Pillar154" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 55, -64, -27 )
+
+[node name="Pillar160" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 55, -64, -35 )
+
+[node name="Pillar166" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 55, -64, -43 )
+
+[node name="Pillar173" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 55, -64, -51 )
+
+[node name="Pillar176" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 55, -64, -59 )
+
+[node name="Pillar179" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 55, -64, -67 )
+
+[node name="Pillar183" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 55, -64, -75 )
+
+[node name="Pillar185" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 55, -64, -83 )
+
+[node name="Pillar187" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 55, -64, -93 )
+
+[node name="Pillar33" parent="Map/Pillar" instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, -64, -80 )
+
 [node name="Pillar8" parent="Map/Pillar" instance=ExtResource( 13 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31, -64, -93 )
 
 [node name="Player" parent="." instance=ExtResource( 14 )]
-transform = Transform( -0.104976, 0, 0.994475, 0, 1, 0, -0.994475, 0, -0.104976, 39.4517, -63.8926, -41.584 )
+transform = Transform( -0.104976, 0, 0.994475, 0, 1, 0, -0.994475, 0, -0.104976, 1.34204, 14.4568, 11.8762 )
 
 [editable path="Map/Interactive/Teleporter"]
 
