@@ -20,7 +20,6 @@
 [node name="Map" type="Spatial" parent="."]
 
 [node name="Blocks" type="Spatial" parent="Map"]
-editor/display_folded = true
 
 [node name="Block1738" parent="Map/Blocks" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 5, -6 )
@@ -51,6 +50,9 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 3, -12 )
 
 [node name="Block1778" parent="Map/Blocks" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 5, -12 )
+
+[node name="Block1845" parent="Map/Blocks" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 5, -12 )
 
 [node name="Block1751" parent="Map/Blocks" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 3, -12 )
