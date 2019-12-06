@@ -18,10 +18,8 @@
 [node name="Level" type="Spatial"]
 
 [node name="Map" type="Spatial" parent="."]
-editor/display_folded = true
 
 [node name="Blocks" type="Spatial" parent="Map"]
-editor/display_folded = true
 
 [node name="Block1738" parent="Map/Blocks" instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 5, -6 )
@@ -369,7 +367,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -6, 11, 6 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 11, 6 )
 
 [node name="Wall" type="Spatial" parent="Map"]
-editor/display_folded = true
 
 [node name="Wall" parent="Map/Wall" instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 11, -13 )
@@ -3088,7 +3085,6 @@ transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 19, 1
 transform = Transform( -4.37114e-008, 0, 1, 0, 1, 0, -1, 0, -4.37114e-008, 19, 14, -27 )
 
 [node name="Interactive" type="Spatial" parent="Map"]
-editor/display_folded = true
 
 [node name="Ammo" parent="Map/Interactive" instance=ExtResource( 4 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 5, -10 )
@@ -3130,7 +3126,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 57, 11, -6 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 28, -102, -30 )
 
 [node name="Ground" type="Spatial" parent="Map"]
-editor/display_folded = true
 
 [node name="Ground15" parent="Map/Ground" instance=ExtResource( 7 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12, 10 )
@@ -3340,7 +3335,6 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 14, 0, 2 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 2 )
 
 [node name="Spikes" type="Spatial" parent="Map"]
-editor/display_folded = true
 
 [node name="Spikes" parent="Map/Spikes" instance=ExtResource( 8 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, -24, -44 )
@@ -4097,7 +4091,6 @@ start_pause = 0.5
 end_pause = 0.5
 
 [node name="Stairs" type="Spatial" parent="Map"]
-editor/display_folded = true
 
 [node name="Stairs4" parent="Map/Stairs" instance=ExtResource( 10 )]
 transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 20, 2, -20 )
@@ -4166,7 +4159,6 @@ transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 0, 6,
 transform = Transform( -1, 0, -8.74228e-008, 0, 1, 0, 8.74228e-008, 0, -1, 0, 10, 2 )
 
 [node name="Lava" type="Spatial" parent="Map"]
-editor/display_folded = true
 
 [node name="Lava17" parent="Map/Lava" instance=ExtResource( 11 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 40, -84, -72 )
@@ -5026,7 +5018,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, -64, -80 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31, -64, -93 )
 
 [node name="Player" parent="." instance=ExtResource( 14 )]
-transform = Transform( 0.99984, 0, 0.0179023, 0, 1, 0, -0.0179023, 0, 0.99984, -1.65796, 14.4568, 12.8762 )
+transform = Transform( -0.0847871, 0, 0.996399, 0, 1, 0, -0.996399, 0, -0.0847871, 38.4248, -64.4333, -40.8765 )
 
 [editable path="Map/Interactive/Teleporter"]
 

@@ -19,8 +19,11 @@ func _ready():
 func _process(delta):
 	if can_hook == true:
 		Music.pitch_scale = 1.1
+		$Camera/HookModel.visible = true
 	else:
 		Music.pitch_scale = 1
+		$Camera/HookModel.visible = false
+
 	$Camera/Crosshair.position = Vector2(OS.window_size.x / 2, OS.window_size.y / 2)
 	$Camera/Crosshair.position = Vector2(OS.window_size.x / 2, OS.window_size.y / 2)
 

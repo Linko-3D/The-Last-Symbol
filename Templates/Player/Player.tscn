@@ -64,8 +64,10 @@ material/0 = ExtResource( 7 )
 
 [node name="HookModel" type="MeshInstance" parent="Camera"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.798057, -0.543508, -0.576994 )
+visible = false
 mesh = ExtResource( 8 )
 material/0 = null
 
-[node name="SpotLight" type="SpotLight" parent="."]
+[node name="SpotLight" type="SpotLight" parent="Camera"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.9, 0 )
 spot_range = 30.0
