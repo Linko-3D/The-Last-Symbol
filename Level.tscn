@@ -5018,7 +5018,7 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, -64, -80 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 31, -64, -93 )
 
 [node name="Player" parent="." instance=ExtResource( 14 )]
-transform = Transform( -0.0847871, 0, 0.996399, 0, 1, 0, -0.996399, 0, -0.0847871, 38.4248, -64.4333, -40.8765 )
+transform = Transform( 0.996399, 0, 0.0847871, 0, 1, 0, -0.0847871, 0, 0.996399, -1.18899, 13.6268, 14.9712 )
 
 [editable path="Map/Interactive/Teleporter"]
 

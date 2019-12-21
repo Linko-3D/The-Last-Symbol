@@ -4,6 +4,8 @@ export var speed = 8.5
 export var jump_height = 9.0
 export var mouse_sensitivity = 1.0
 
+var jumped = false
+
 var can_hook = false
 
 var i = 0
@@ -45,8 +47,15 @@ func _physics_process(delta):
 	vector += global_transform.basis.z * (-int(UP) + int(DOWN)) * speed 
 	vector += global_transform.basis.x * (-int(LEFT) + int(RIGHT)) * speed 
 	
+	if is_on_floor() == false:
+		if jumped == false:
+			jump()
+		jumped = true
+	else:
+		jumped = false
+	
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		vector.y = jump_height
+		jump()
 	
 	if Input.is_action_just_pressed("restart"):
 		get_tree().reload_current_scene()
@@ -54,6 +63,9 @@ func _physics_process(delta):
 	vector.y -= gravity * delta
 	
 	vector = move_and_slide(vector, Vector3.UP)
+
+func jump():
+	vector.y = jump_height
 
 func _input(event):
 	if event is InputEventMouseMotion:
